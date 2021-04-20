@@ -321,39 +321,39 @@
                 </tr>
                 <tr>
                     <td>Flex</td>
-                    <td><input type="text" name="p4_1" value="<?php echo @$re['p4_1']; ?>" /></td>
-                    <td><input type="text" name="p4_2" value="<?php echo @$re['p4_2']; ?>" /></td>
+                    <td><input type="text" name="FlexPre" value="" /></td>
+                    <td><input type="text" name="FlexCurr" value="" /></td>
                     <td>45</td>
                     <td rowspan="6">Increase AROM by 10%</td>
                 </tr>
                 <tr>
                     <td>Ext</td>
-                    <td><input type="text" name="p4_3" value="<?php echo @$re['p4_3']; ?>" /></td>
-                    <td><input type="text" name="p4_4" value="<?php echo @$re['p4_4']; ?>" /></td>
+                    <td><input type="text" name="extPre" value="" /></td>
+                    <td><input type="text" name="extCurr" value="" /></td>
                     <td>45</td>
                 </tr>
                 <tr>
                     <td>R Rot</td>
-                    <td><input type="text" name="p4_5" value="<?php echo @$re['p4_5']; ?>" /></td>
-                    <td><input type="text" name="p4_6" value="<?php echo @$re['p4_6']; ?>" /></td>
+                    <td><input type="text" name="rRotPre" value="" /></td>
+                    <td><input type="text" name="rRotCurr" value="" /></td>
                     <td>80-90</td>
                 </tr>
                 <tr>
                     <td>L Rot</td>
-                    <td><input type="text" name="p4_7" value="<?php echo @$re['p4_7']; ?>" /></td>
-                    <td><input type="text" name="p4_8" value="<?php echo @$re['p4_8']; ?>" /></td>
+                    <td><input type="text" name="lRotPre" value="" /></td>
+                    <td><input type="text" name="lRotCurr" value="" /></td>
                     <td>80-90</td>
                 </tr>
                 <tr>
                     <td>R Side bending</td>
-                    <td><input type="text" name="p4_9" value="<?php echo @$re['p4_9']; ?>" /></td>
-                    <td><input type="text" name="p4_10" value="<?php echo @$re['p4_10']; ?>" /></td>
+                    <td><input type="text" name="rsbPre" value="" /></td>
+                    <td><input type="text" name="rsbCurr" value="" /></td>
                     <td>45</td>
                 </tr>
                 <tr>
                     <td>L Side bending</td>
-                    <td><input type="text" name="p4_11" value="<?php echo @$re['p4_11']; ?>" /></td>
-                    <td><input type="text" name="p4_12" value="<?php echo @$re['p4_12']; ?>" /></td>
+                    <td><input type="text" name="lsbPre" value="" /></td>
+                    <td><input type="text" name="lsbCurr" value="" /></td>
                     <td>45</td>
                 </tr>
             </table>
@@ -373,39 +373,39 @@
                 </tr>
                 <tr>
                     <td>Flex</td>
-                    <td><input type="text" name="p5_1" value="<?php echo @$re['p5_1']; ?>" /></td>
-                    <td><input type="text" name="p5_2" value="<?php echo @$re['p5_2']; ?>" /></td>
+                    <td><input type="text" name="FlexPreManual" value="" /></td>
+                    <td><input type="text" name="FlexCurrManual" value="" /></td>
                     <td>45</td>
                     <td rowspan="6">Improve muscle strength by 1 grade</td>
                 </tr>
                 <tr>
                     <td>Ext</td>
-                    <td><input type="text" name="p5_3" value="<?php echo @$re['p5_3']; ?>" /></td>
-                    <td><input type="text" name="p5_4" value="<?php echo @$re['p5_4']; ?>" /></td>
+                    <td><input type="text" name="extPreManual" value="" /></td>
+                    <td><input type="text" name="extCurrManual" value="" /></td>
                     <td>45</td>
                 </tr>
                 <tr>
                     <td>R Rot</td>
-                    <td><input type="text" name="p5_5" value="<?php echo @$re['p5_5']; ?>" /></td>
-                    <td><input type="text" name="p5_6" value="<?php echo @$re['p5_6']; ?>" /></td>
+                    <td><input type="text" name="rRotPreManual" value="" /></td>
+                    <td><input type="text" name="rRotCurrManual" value="" /></td>
                     <td>80-90</td>
                 </tr>
                 <tr>
                     <td>L Rot</td>
-                    <td><input type="text" name="p5_7" value="<?php echo @$re['p5_7']; ?>" /></td>
-                    <td><input type="text" name="p5_8" value="<?php echo @$re['p5_8']; ?>" /></td>
+                    <td><input type="text" name="lRotPreManual" value="" /></td>
+                    <td><input type="text" name="lRotCurrManual" value="" /></td>
                     <td>80-90</td>
                 </tr>
                 <tr>
                     <td>R Side bending</td>
-                    <td><input type="text" name="p5_9" value="<?php echo @$re['p5_9']; ?>" /></td>
-                    <td><input type="text" name="p5_10" value="<?php echo @$re['p5_10']; ?>" /></td>
+                     <td><input type="text" name="rsbPreManual" value="" /></td>
+                    <td><input type="text" name="rsbCurrManual" value="" /></td>
                     <td>45</td>
                 </tr>
                 <tr>
                     <td>L Side bending</td>
-                    <td><input type="text" name="p5_11" value="<?php echo @$re['p5_11']; ?>" /></td>
-                    <td><input type="text" name="p5_12" value="<?php echo @$re['p5_12']; ?>" /></td>
+                    <td><input type="text" name="lsbPreManual" value="" /></td>
+                    <td><input type="text" name="lsbCurrManual" value="" /></td>
                     <td>45</td>
                 </tr>
             </table>

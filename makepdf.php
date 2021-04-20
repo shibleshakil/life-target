@@ -646,19 +646,134 @@ if(isset($_POST['Neck']) && $_POST['Neck'] == "Neck"){
     $data .= '<input type="checkbox"> Neck ';
 }
 
+$data .= '<br>'.'<br>';
 
+if(isset($_POST['NeckPainlevel']) && $_POST['NeckPainlevel']){
+    $data .= 'Pain level (VAS) : '.'<u> '.$_POST['NeckPainlevel'].' </u>'.'/10';
+}else{
+    $data .= 'Pain level (VAS) : '.'____________'.'/10';
+}
+$data .= '<br>';
 
+if(isset($_POST['NeckPrevious']) && $_POST['NeckPrevious']){
+    $data .= 'Previous (VAS) : '.'<u> '.$_POST['NeckPrevious'].' </u>'.'/10';
+}else{
+    $data .= 'Previous (VAS) : '.'____________'.'/10';
+}
+$data .= '<br>';
 
+if(isset($_POST['NeckGoal']) && $_POST['NeckGoal']){
+    $data .= 'Goal (6-8 weeks) : Decrease pain level to  '.'<u> '.$_POST['NeckGoal'].' </u>'.'/10';
+}else{
+    $data .= 'Goal (6-8 weeks) : Decrease pain level to  '.'____________'.'/10';
+}
 
+$data .= '<br>'.'<br>';
+$data .= '<u><b>AROM</b></u>';
+$data .= '<br>'.'<br>';
+$data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="2">Movement</td>
+        <td colspan="2">Range</td>
+        <td rowspan="2">Normal</td>
+        <td rowspan="2">Goal (6-8 weeks)</td>
+    </tr> 
+    <tr>
+        <td>Previous</td>
+        <td>Current</td>
+    </tr>
+    <tr>
+        <td>Flex</td>
+        <td>'.$_POST['FlexPre'].'</td>
+        <td>'.$_POST['FlexCurr'].'</td>
+        <td>45</td>
+        <td rowspan="6">Increase AROM by 10%</td>
+    </tr>
+    <tr>
+        <td>Ext</td>
+        <td>'.$_POST['extPre'].'</td>
+        <td>'.$_POST['extCurr'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>R Rot</td>
+        <td>'.$_POST['rRotPre'].'</td>
+        <td>'.$_POST['rRotCurr'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>L Rot</td>
+        <td>'.$_POST['lRotPre'].'</td>
+        <td>'.$_POST['lRotCurr'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>R Side bending</td>
+        <td>'.$_POST['rsbPre'].'</td>
+        <td>'.$_POST['rsbCurr'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>L Side bending</td>
+        <td>'.$_POST['lsbPre'].'</td>
+        <td>'.$_POST['lsbCurr'].'</td>
+        <td>45</td>
+    </tr>
+</table>';
 
+$data .= '<br>'.'<br>';
+$data .= '<u><b>Manual muscle test</b></u>';
+$data .= '<br>'.'<br>';
 
-
-
-
-
-
-
-
+$data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="2">Movement</td>
+        <td colspan="2">Range</td>
+        <td rowspan="2">Normal</td>
+        <td rowspan="2">Goal (6-8 weeks)</td>
+    </tr>
+    <tr>
+        <td>Previous</td>
+        <td>Current</td>
+    </tr>
+    <tr>
+        <td>Flex</td>
+        <td>'.$_POST['FlexPreManual'].'</td>
+        <td>'.$_POST['FlexCurrManual'].'</td>
+        <td>45</td>
+        <td rowspan="6">Improve muscle strength by 1 grade</td>
+    </tr>
+    <tr>
+        <td>Ext</td>
+        <td>'.$_POST['extPreManual'].'</td>
+        <td>'.$_POST['extCurrManual'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>R Rot</td>
+        <td>'.$_POST['rRotPreManual'].'</td>
+        <td>'.$_POST['rRotCurrManual'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>L Rot</td>
+        <td>'.$_POST['lRotPreManual'].'</td>
+        <td>'.$_POST['lRotCurrManual'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>R Side bending</td>
+        <td>'.$_POST['rsbPreManual'].'</td>
+        <td>'.$_POST['rsbCurrManual'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>L Side bending</td>
+        <td>'.$_POST['lsbPreManual'].'</td>
+        <td>'.$_POST['lsbCurrManual'].'</td>
+        <td>45</td>
+    </tr>
+</table>';
 
 
 echo $data;
