@@ -158,7 +158,7 @@ if(isset($_POST['p1_24']) && $_POST['p1_24'] == "Swelling due to"){
 }else{
     $data .= '<input type="checkbox"> Swelling due to';
 }
-
+$data .= '<br>';
 if(isset($_POST['p1_25']) && $_POST['p1_25'] == "work related injury"){
     $data .= '<input type="checkbox" checked="checked" > work related injury ';
 }else{
@@ -208,7 +208,7 @@ if(isset($_POST['p1_32']) && $_POST['p1_32'] == "Right Hip"){
 }else{
     $data .= '<input type="checkbox"> Right Hip';
 }
-
+$data .= '<br>';
 if(isset($_POST['p1_33']) && $_POST['p1_33'] == "Right Knee"){
     $data .= '<input type="checkbox" checked="checked" > Right Knee ';
 }else{
@@ -276,7 +276,7 @@ if(isset($_POST['p1_43']) && $_POST['p1_43'] == "Left Knee"){
 }else{
     $data .= '<input type="checkbox"> Left Knee';
 }
-
+$data .= '<br>';
 if(isset($_POST['p1_44']) && $_POST['p1_44'] == "Left Ankle"){
     $data .= '<input type="checkbox" checked="checked" > Left Ankle ';
 }else{
@@ -376,6 +376,8 @@ if(isset($_POST['pushing']) && $_POST['pushing'] == "pushing"){
 }else{
     $data .= '<input type="checkbox"> pushing ';
 }
+
+$data .= '<br>';
 
 if(isset($_POST['carrying']) && $_POST['carrying'] == "carrying"){
     $data .= '<input type="checkbox" checked="checked" > carrying ';
@@ -526,7 +528,7 @@ if(isset($_POST['pullingW']) && $_POST['pullingW'] == "pullingW"){
 }else{
     $data .= '<input type="checkbox"> pulling, ';
 }
-
+$data .= '<br>';
 if(isset($_POST['pushingW']) && $_POST['pushingW'] == "pushingW"){
     $data .= '<input type="checkbox" checked="checked" > pushing, ';
 }else{
@@ -617,7 +619,7 @@ if(isset($_POST['standing_bending']) && $_POST['standing_bending'] == "standing 
 }else{
     $data .= '<input type="checkbox"> bending and kneeling, ';
 }
-
+$data .='<br>';
 if(isset($_POST['standing_driving']) && $_POST['standing_driving'] == "standing driving"){
     $data .= '<input type="checkbox" checked="checked" > driving for more than ';
 }else{
@@ -776,8 +778,8 @@ $data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="t
 </table>';
 
 
-echo $data;
-die;
+// echo $data;
+// die;
 // $mpdf->SetFont('Arial','B',16);
 $mpdf->WriteHTML($data);
 $mpdf->Output('data.pdf', 'D');
