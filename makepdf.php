@@ -422,7 +422,7 @@ if(isset($_POST['hour']) && $_POST['hour']){
 }else{
     $data .= '____________'. ' hour(s). ';
 }
-$data .= '<br>';
+$data .= '<br>'.'<br>';
 
 if(isset($_POST['Standing_for_up']) && $_POST['Standing_for_up'] == "Standing for up"){
     $data .= '<input type="checkbox" checked="checked" > Standing for up ';
@@ -565,9 +565,104 @@ if(isset($_POST['hourW']) && $_POST['hourW']){
 }else{
     $data .= '____________'. ' hour(s). ';
 }
+$data .= '<br>'.'<br>';
 
-// echo $data;
-// die;
+if(isset($_POST['standing']) && $_POST['standing'] == "standing"){
+    $data .= '<input type="checkbox" checked="checked" > Standing for more than ';
+}else{
+    $data .= '<input type="checkbox"> Standing for more than ';
+}
+if(isset($_POST['standing_minute']) && $_POST['standing_minute']){
+    $data .= '<u> '.$_POST['standing_minute'].' </u>'.'minute(s),';
+}else{
+    $data .= '____________'. ' minute(s), ';
+}
+
+if(isset($_POST['doing_transfer']) && $_POST['doing_transfer'] == "doing transfer"){
+    $data .= '<input type="checkbox" checked="checked" > doing transfer, ';
+}else{
+    $data .= '<input type="checkbox"> doing transfer, ';
+}
+
+if(isset($_POST['standing_squatting']) && $_POST['standing_squatting'] == "squatting"){
+    $data .= '<input type="checkbox" checked="checked" > squatting, ';
+}else{
+    $data .= '<input type="checkbox"> squatting, ';
+}
+
+if(isset($_POST['standing_walking']) && $_POST['standing_walking'] == "standing walking"){
+    $data .= '<input type="checkbox" checked="checked" > walking for more than ';
+}else{
+    $data .= '<input type="checkbox"> walking for more than ';
+}
+if(isset($_POST['standing_block']) && $_POST['standing_block']){
+    $data .= '<u> '.$_POST['standing_block'].' </u>'.'block(s),';
+}else{
+    $data .= '____________'. ' block(s), ';
+}
+
+if(isset($_POST['standing_climbing']) && $_POST['standing_climbing'] == "standing climbing"){
+    $data .= '<input type="checkbox" checked="checked" > climbing more than ';
+}else{
+    $data .= '<input type="checkbox"> climbing more than ';
+}
+if(isset($_POST['standing_stairs']) && $_POST['standing_stairs']){
+    $data .= '<u> '.$_POST['standing_stairs'].' </u>'.'stair(s),';
+}else{
+    $data .= '____________'. ' stair(s), ';
+}
+
+if(isset($_POST['standing_bending']) && $_POST['standing_bending'] == "standing bending"){
+    $data .= '<input type="checkbox" checked="checked" > bending and kneeling, ';
+}else{
+    $data .= '<input type="checkbox"> bending and kneeling, ';
+}
+
+if(isset($_POST['standing_driving']) && $_POST['standing_driving'] == "standing driving"){
+    $data .= '<input type="checkbox" checked="checked" > driving for more than ';
+}else{
+    $data .= '<input type="checkbox"> driving for more than ';
+}
+if(isset($_POST['standing_hour']) && $_POST['standing_hour']){
+    $data .= '<u> '.$_POST['standing_hour'].' </u>'.'hour(s),';
+}else{
+    $data .= '____________'. ' hour(s), ';
+}
+$data .= '<br>'.'<br>';
+$data .= 'The patient stated the pain diminishes the capacity to carry out both occupational and recreational daily activities including (social, self-care, life-support activities and family/home  responsibilities).';
+
+$data .= '<br>'.'<br>';
+$data .= '<u><b>Objectives :</b></u>'.'<br>';
+if(isset($_POST['pre_date']) && $_POST['pre_date']){
+    $data .= 'Previous date '.'<u> '.$_POST['pre_date'].' </u>';
+}else{
+    $data .= 'Previous date '.'____________';
+}
+$data .= '<br>'.'<br>';
+
+if(isset($_POST['Neck']) && $_POST['Neck'] == "Neck"){
+    $data .= '<input type="checkbox" checked="checked" > Neck ';
+}else{
+    $data .= '<input type="checkbox"> Neck ';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo $data;
+die;
 // $mpdf->SetFont('Arial','B',16);
 $mpdf->WriteHTML($data);
 $mpdf->Output('data.pdf', 'D');

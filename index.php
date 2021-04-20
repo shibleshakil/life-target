@@ -257,27 +257,24 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="p2_38" <?php if(@$re['p2_38']==1){ echo 'checked' ; } ?> /> Standing for
-                        more than <input type="text" name="p2_39" value="<?php echo @$re['p2_39']; ?>" /> minutes,
-                        <input type="checkbox" name="p2_40" <?php if(@$re['p2_40']==1){ echo 'checked' ; } ?> /> doing transfer,
-                        <input type="checkbox" name="p2_41" <?php if(@$re['p2_41']==1){ echo 'checked' ; } ?> /> squatting,
-                        <input type="checkbox" name="p2_42" <?php if(@$re['p2_42']==1){ echo 'checked' ; } ?> /> walking for
-                        more than <input type="text" name="p2_43" value="<?php echo @$re['p2_43']; ?>" /> block(s),
-                        <input type="checkbox" name="p2_44" <?php if(@$re['p2_44']==1){ echo 'checked' ; } ?> /> climbing more
-                        than <input type="text" name="p2_45" value="<?php echo @$re['p2_45']; ?>" /> stairs,
-                        <input type="checkbox" name="p2_46" <?php if(@$re['p2_46']==1){ echo 'checked' ; } ?> /> bending and
-                        kneeling,
-                        <input type="checkbox" name="p2_47" <?php if(@$re['p2_47']==1){ echo 'checked' ; } ?> /> driving for
-                        more than <input type="text" name="p2_48" value="<?php echo @$re['p2_48']; ?>" /> hour(s).
+                        <input type="checkbox" name="standing" value="standing" /> Standing for more than 
+                        <input type="text" name="standing_minute" value="" /> minutes,
+                        <input type="checkbox" name="doing_transfer" value="doing transfer" /> doing transfer,
+                        <input type="checkbox" name="standing_squatting" value="squatting" /> squatting,
+                        <input type="checkbox" name="standing_walking" value="standing walking" /> walking for more than 
+                        <input type="text" name="standing_block" value="" /> block(s),
+                        <input type="checkbox" name="standing_climbing" value="standing climbing" /> climbing more than 
+                        <input type="text" name="standing_stairs" value="" /> stairs,
+                        <input type="checkbox" name="standing_bending" value="standing bending" /> bending and kneeling,
+                        <input type="checkbox" name="standing_driving" value="standing driving" /> driving for more than 
+                        <input type="text" name="standing_hour" value="" /> hour(s).
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>The patient stated the pain diminishes the capacity to carry out both occupational and recreational
-                        daily activities including (social, self-care, life-support activities and family/home
-                        responsibilities).</td>
+                    <td>The patient stated the pain diminishes the capacity to carry out both occupational and recreational daily activities including (social, self-care, life-support activities and family/home  responsibilities).</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
@@ -287,21 +284,21 @@
 
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td><u><b>Objectives:</b></u> Previous date <input type="text" name="p3_1"
-                            value="<?php echo @$re['p3_1']; ?>" /></td>
+                    <td><u><b>Objectives:</b></u> Previous date <input type="text" name="pre_date"
+                            value="" /></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="p3_2" <?php if(@$re['p3_2']==1){ echo 'checked' ; } ?> /> Neck</td>
+                    <td><input type="checkbox" name="Neck" value="Neck" /> Neck</td>
                 </tr>
                 <tr>
                     <td>
-                        <div>Pain level (VAS): <input type="text" name="p3_3" value="<?php echo @$re['p3_3']; ?>" />/10</div>
-                        <div>Previous (VAS): <input type="text" name="p3_4" value="<?php echo @$re['p3_4']; ?>" />/10</div>
-                        <div>Goal (6-8 weeks): Decrease pain level to <input type="text" name="p3_5"
-                                value="<?php echo @$re['p3_5']; ?>" />/10.</div>
+                        <div>Pain level (VAS): <input type="text" name="NeckPainlevel" value="" />/10</div>
+                        <div>Previous (VAS): <input type="text" name="NeckPrevious" value="" />/10</div>
+                        <div>Goal (6-8 weeks): Decrease pain level to <input type="text" name="NeckGoal" value="" />/10.
+                        </div>
                     </td>
                 </tr>
                 <tr>
