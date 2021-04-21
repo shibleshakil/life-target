@@ -43,22 +43,22 @@
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
                     <td style="margin-bottom:2px;"><b>Date of Service:</b></td>
-                    <td><input type="text" name="p1_1" value="<?php echo @$re['p1_1']; ?>" /></td>
+                    <td><input type="text" name="p1_1" /></td>
                     <td><b>Date of Birth:</b></td>
-                    <td><input type="text" name="p1_2" value="<?php echo @$re['p1_2']; ?>" /></td>
+                    <td><input type="text" name="p1_2" /></td>
                 </tr>
                 <tr>
                     <td><b>Patient Name:</b></td>
-                    <td><input type="text" name="p1_3" value="<?php echo @$re['p1_3']; ?>" /></td>
+                    <td><input type="text" name="p1_3"/></td>
                     <td><b>Date of Accident:</b></td>
-                    <td><input type="text" name="p1_4" value="<?php echo @$re['p1_4']; ?>" /></td>
+                    <td><input type="text" name="p1_4"/></td>
                 </tr>
                 <tr>
                     <td><b>Sex:</b></td>
                     <td colspan="3">
-                        <input type="checkbox" name="sex" value="M" /> <label
+                        <input type="checkbox" name="sexM" value="sexM" /> <label
                             for="p1_5">M</label>
-                        <input type="checkbox" name="sex" value="F" /> <label
+                        <input type="checkbox" name="sexF" value="sexF" /> <label
                             for="p1_6">F</label>
                     </td>
                 </tr>
@@ -81,7 +81,7 @@
                     <td><u><b>Occupational Status:</b></u></td>
                 </tr>
                 <tr>
-                    <td>Currently, the patient is <input type="checkbox" name="occupation" value="working" /> working <input type="checkbox" name="occupation" value="not working"/> not working</td>
+                    <td>Currently, the patient is <input type="checkbox" name="working" value="working" /> working <input type="checkbox" name="notworking" value="notworking"/> not working</td>
                 <tr>
                     <td>&nbsp;</td>
                 </tr>
@@ -127,7 +127,7 @@
                         <input type="checkbox" name="p1_21" value="Spasm" /> Spasm
                         <input type="checkbox" name="p1_22" value="limited ROM" /> limited ROM
                         <input type="checkbox" name="p1_23" value="Stiffness" /> Stiffness
-                        <input type="checkbox" name="p1_24" value="Swelling due to" /> Swelling due to
+                        <input type="checkbox" name="p1_24" value="Swelling due to" /> Swelling due to 
                         <input type="checkbox" name="p1_25" value="work related injury" /> work related injury
                         <input type="checkbox" name="p1_26" value="work related major" /> work related motor vehicle accident injury, affecting the following part(s)
                     </td>
@@ -143,7 +143,7 @@
                         <input type="checkbox" name="p1_30" value="Right Hand" /> Right Hand
                         <input type="checkbox" name="p1_31" value="Right Finger" /> Right Finger
                         <input type="checkbox" name="p1_32" value="Right Hip" /> Right Hip
-                        <input type="checkbox" name="p1_33" value="Right Knee" /> Right Knee
+                        <input type="checkbox" name="p1_33" value="Right Knee" /> Right Knee 
                         <input type="checkbox" name="p1_34" value="Right Ankle" /> Right Ankle
                         <input type="checkbox" name="p1_35" value="Right Foot" /> Right Foot
                         <input type="checkbox" name="p1_36" value="Right Toe" /> Right Toe
@@ -1044,7 +1044,7 @@
                     <td><input type="checkbox" name="rlWriststPositiveSR" value="rlWriststPositiveSR" /> Positive
                     <input type="checkbox" name="rlWriststNegativeSR" value="rlWriststNegativeSR" /> Negative</td>
                     <td><input type="checkbox" name="rlWriststPositiveSL" value="rlWriststPositiveSL" /> Positive
-                    <input type="checkbox" name="rlWriststNegativeSL" value="rlElbowstNegativeSL" /> Negative</td>
+                    <input type="checkbox" name="rlWRiststNegativeSL" value="rlWRiststNegativeSL" /> Negative</td>
                 </tr>
             </table>
 
@@ -1085,6 +1085,205 @@
                     </td>
                 </tr>
             </table>
+
+            <br>
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="color:red"><input type="checkbox" name="RightHip" value="RightHip" /> Right Hip  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="LeftHip" value="LeftHip" /> Left Hip</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Pain level (VAS): Right<input type="text" name="rightHipPainlevel" value="" />/10 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Left<input type="text" name="leftHipPainlevel" value="" />/10
+                        </div>
+                        <div>Goal (6-8 weeks): Decrease pain level to <input type="text" name="rlHipGoal" value="" />/10.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>AROM :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Hip</td>
+                    <td colspan="1">Left Hip</td>
+                    <td colspan="1">Normal</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="rlHipFlexPre" value="" /></td>
+                    <td><input type="text" name="rlHipFlexCurr" value="" /></td>
+                    <td>170-180</td>
+                    <td rowspan="6">Increase AROM by 10%</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="rlHipextPre" value="" /></td>
+                    <td><input type="text" name="rlHipextCurr" value="" /></td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Abd</td>
+                    <td><input type="text" name="rlHiprRotPre" value="" /></td>
+                    <td><input type="text" name="rlHiprRotCurr" value="" /></td>
+                    <td>170-180</td>
+                </tr>
+                <tr>
+                    <td>Add</td>
+                    <td><input type="text" name="rlHiplRotPre" value="" /></td>
+                    <td><input type="text" name="rlHiplRotCurr" value="" /></td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>ER</td>
+                    <td><input type="text" name="rlHiprsbPre" value="" /></td>
+                    <td><input type="text" name="rlHiprsbCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>IR</td>
+                    <td><input type="text" name="rlHiplsbPre" value="" /></td>
+                    <td><input type="text" name="rlHiplsbCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>Manual muscle test :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Hip</td>
+                    <td colspan="1">Left Hip</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="rlHipFlexPreManual" value="" /></td>
+                    <td><input type="text" name="rlHipFlexCurrManual" value="" /></td>
+                    <td rowspan="6">Improve muscle strength by 1 grade</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="rlHipextPreManual" value="" /></td>
+                    <td><input type="text" name="rlHipextCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Abd</td>
+                    <td><input type="text" name="rlHiprRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlHiprRotCurrManual" value="" /></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Add</td>
+                    <td><input type="text" name="rlHiplRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlHiplRotCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>ER</td>
+                    <td><input type="text" name="rlHipeRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlHipeRotCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>IR</td>
+                     <td><input type="text" name="rlHiprsbPreManual" value="" /></td>
+                    <td><input type="text" name="rlHiprsbCurrManual" value="" /></td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Special tests :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Test</td>
+                    <td colspan="1">Right Hip Findings</td>
+                    <td colspan="1">Left Hip Findings</td>
+                </tr>
+                <tr>
+                    <td>Hawkin’s / Neer’s test</td>
+                    <td><input type="checkbox" name="rlHipcdtPositiveR" value="rlHipcdtPositiveR" /> Positive
+                    <input type="checkbox" name="rlHipcdtNegativeR" value="rlHipcdtNegativeR"/> Negative</td>
+                    <td><input type="checkbox" name="rlHipcdtPositiveL" value="rlHipcdtPositiveL" /> Positive
+                    <input type="checkbox" name="rlHipcdtNegativeL" value="rlHipcdtNegativeL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Empty Can test</td>
+                    <td><input type="checkbox" name="rlHipcdtPositiveER" value="rlHipcdtPositiveER" /> Positive
+                    <input type="checkbox" name="rlHipcdtNegativeER" value="rlHipcdtNegativeER"/> Negative</td>
+                    <td><input type="checkbox" name="rlHipcdtPositiveEL" value="rlHipcdtPositiveEL" /> Positive
+                    <input type="checkbox" name="rlHipcdtNegativeEL" value="rlHipcdtNegativeEL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Speed’s test</td>
+                    <td><input type="checkbox" name="rlHipstPositiveSR" value="rlHipstPositiveSR" /> Positive
+                    <input type="checkbox" name="rlHipstNegativeSR" value="rlHipstNegativeSR" /> Negative</td>
+                    <td><input type="checkbox" name="rlHipstPositiveSL" value="rlHipstPositiveSL" /> Positive
+                    <input type="checkbox" name="rlHipstNegativeSL" value="rlHipstNegativeSL" /> Negative</td>
+                </tr>
+            </table>
+
+            <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left; margin-top:20px;">
+                <tr>
+                    <td><input type="checkbox" name="GaitHip" value="GaitHip" /><u> Gait Analysis :</u> 
+                        <input type="checkbox" name="NormalHip" value="NormalHip" /> Normal Gait
+                        <input type="checkbox" name="AntalgicHip" value="AntalgicHip" /> Antalgic Gait  
+                        <input type="checkbox" name="LimpingHip" value="LimpingHip" /> Limping Gait
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="DecreaseHip" value="DecreaseHip" /> Decrease cadence
+                        <input type="checkbox" name="DecreaseStepHip" value="DecreaseStepHip" /> Decrease step length
+                    </td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Objective Findings /Problems list :</b></u></div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;margin-left:20px;">
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildHip" value="MildHip" /> Mild
+                        <input type="checkbox" name="ModerateHip" value="ModerateHip" /> Moderate
+                        <input type="checkbox" name="severemuscleHip" value="severemuscleHip" /> severe muscle spasm at the 
+                        <input type="checkbox" name="RightHipmusclesHip" value="RightHipmusclesHip" /> Right Hip muscles
+                        <input type="checkbox" name="LeftHipmusclesHip" value="LeftHipmusclesHip" /> Left Hip muscles
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildHip2" value="MildHip2" /> Mild
+                        <input type="checkbox" name="ModerateHip2" value="ModerateHip2" /> Moderate
+                        <input type="checkbox" name="severemuscleHip2" value="severemuscleHip2" /> severe Limited AROM at  
+                        <input type="checkbox" name="RightHipmusclesHip2" value="RightHipmusclesHip2" /> Right Hip joint 
+                        <input type="checkbox" name="LeftHipmusclesHip2" value="LeftHipmusclesHip2" /> Left Hip joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildHip3" value="MildHip3" /> Mild
+                        <input type="checkbox" name="ModerateHip3" value="ModerateHip3" /> Moderate
+                        <input type="checkbox" name="severemuscleHip3" value="severemuscleHip3" /> severe Restricted mobility at the   
+                        <input type="checkbox" name="RightHipmusclesHip3" value="RightHipmusclesHip3" /> Right Hip joint 
+                        <input type="checkbox" name="LeftHipmusclesHip3" value="LeftHipmusclesHip3" /> Left Hip joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildHip4" value="MildHip4" /> Mild
+                        <input type="checkbox" name="ModerateHip4" value="ModerateHip4" /> Moderate
+                        <input type="checkbox" name="severemuscleHip4" value="severemuscleHip4" /> severe Decreased functional activities.
+                    </td>
+                </tr>
+            </table>
+            <br>
 
             <br>
             <input type="submit" value="Create PDF" class="btn btn-primary">
