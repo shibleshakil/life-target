@@ -1255,6 +1255,119 @@ $data .= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="
     </tr>
 </table>';
 
+//Objective Findings /Problems list :
+
+if(isset($_POST['Mild']) && $_POST['Mild'] == "Mild"){
+    $Mild = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $Mild = '<input type="checkbox"> Mild ';
+}
+if(isset($_POST['Mild2']) && $_POST['Mild2'] == "Mild2"){
+    $Mild2 = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $Mild2 = '<input type="checkbox"> Mild ';
+}
+if(isset($_POST['Mild3']) && $_POST['Mild3'] == "Mild3"){
+    $Mild3 = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $Mild3 = '<input type="checkbox"> Mild ';
+}
+if(isset($_POST['Mild4']) && $_POST['Mild4'] == "Mild4"){
+    $Mild4 = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $Mild4 = '<input type="checkbox"> Mild ';
+}
+
+if(isset($_POST['Moderate']) && $_POST['Moderate'] == "Moderate"){
+    $Moderate = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $Moderate = '<input type="checkbox"> Moderate ';
+}
+if(isset($_POST['Moderate2']) && $_POST['Moderate2'] == "Moderate2"){
+    $Moderate2 = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $Moderate2 = '<input type="checkbox"> Moderate ';
+}
+if(isset($_POST['Moderate3']) && $_POST['Moderate3'] == "Moderate3"){
+    $Moderate3 = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $Moderate3 = '<input type="checkbox"> Moderate ';
+}
+if(isset($_POST['Moderate4']) && $_POST['Moderate4'] == "Moderate4"){
+    $Moderate4 = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $Moderate4 = '<input type="checkbox"> Moderate ';
+}
+
+if(isset($_POST['severemuscle']) && $_POST['severemuscle'] == "severemuscle"){
+    $severemuscle = '<input type="checkbox" checked="checked" > severe muscle spasm at the ';
+}else{
+    $severemuscle = '<input type="checkbox"> severe muscle spasm at the ';
+}
+if(isset($_POST['severemuscle2']) && $_POST['severemuscle2'] == "severemuscle2"){
+    $severemuscle2 = '<input type="checkbox" checked="checked" > severe Limited AROM at ';
+}else{
+    $severemuscle2 = '<input type="checkbox"> severe Limited AROM at ';
+}
+if(isset($_POST['severemuscle3']) && $_POST['severemuscle3'] == "severemuscle3"){
+    $severemuscle3 = '<input type="checkbox" checked="checked" > severe Restricted mobility at the ';
+}else{
+    $severemuscle3 = '<input type="checkbox"> severe Restricted mobility at the ';
+}
+if(isset($_POST['severemuscle4']) && $_POST['severemuscle4'] == "severemuscle4"){
+    $severemuscle4 = '<input type="checkbox" checked="checked" > severe Decreased functional activities. ';
+}else{
+    $severemuscle4 = '<input type="checkbox"> severe Decreased functional activities. ';
+}
+
+if(isset($_POST['RightShouldermuscles']) && $_POST['RightShouldermuscles'] == "RightShouldermuscles"){
+    $RightShouldermuscles = '<input type="checkbox" checked="checked" > Right Shoulder muscles ';
+}else{
+    $RightShouldermuscles = '<input type="checkbox"> Right Shoulder muscles ';
+}
+if(isset($_POST['RightShouldermuscles2']) && $_POST['RightShouldermuscles2'] == "RightShouldermuscles2"){
+    $RightShouldermuscles2 = '<input type="checkbox" checked="checked" > Right Shoulder joint ';
+}else{
+    $RightShouldermuscles2 = '<input type="checkbox"> Right Shoulder joint ';
+}
+if(isset($_POST['RightShouldermuscles3']) && $_POST['RightShouldermuscles3'] == "RightShouldermuscles3"){
+    $RightShouldermuscles3 = '<input type="checkbox" checked="checked" > Right Shoulder joint ';
+}else{
+    $RightShouldermuscles3 = '<input type="checkbox"> Right Shoulder joint. ';
+}
+
+if(isset($_POST['LeftShouldermuscles']) && $_POST['LeftShouldermuscles'] == "LeftShouldermuscles"){
+    $LeftShouldermuscles = '<input type="checkbox" checked="checked" > Left Shoulder muscles ';
+}else{
+    $LeftShouldermuscles = '<input type="checkbox"> Left Shoulder muscles ';
+}
+if(isset($_POST['LeftShouldermuscles2']) && $_POST['LeftShouldermuscles2'] == "LeftShouldermuscles2"){
+    $LeftShouldermuscles2 = '<input type="checkbox" checked="checked" > Left Shoulder joint ';
+}else{
+    $LeftShouldermuscles2 = '<input type="checkbox"> Left Shoulder joint ';
+}
+if(isset($_POST['LeftShouldermuscles3']) && $_POST['LeftShouldermuscles3'] == "LeftShouldermuscles3"){
+    $LeftShouldermuscles3 = '<input type="checkbox" checked="checked" > Left Shoulder joint ';
+}else{
+    $LeftShouldermuscles3 = '<input type="checkbox"> Left Shoulder joint. ';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Objective Findings /Problems list :</b></u></div>';
+$data .= '<table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;margin-left:20px;">
+    <tr>
+        <td> - '.$Mild.''.$Moderate.''.$severemuscle.''.$RightShouldermuscles.''.$LeftShouldermuscles.'</td>
+    </tr>
+    <tr>
+        <td> - '.$Mild2.''.$Moderate2.''.$severemuscle2.''.$RightShouldermuscles2.''.$LeftShouldermuscles2.'</td>
+    </tr>
+    <tr>
+        <td> - '.$Mild3.''.$Moderate3.''.$severemuscle3.''.$RightShouldermuscles3.''.$LeftShouldermuscles3.'</td>
+    </tr>
+    <tr>
+        <td> - '.$Mild4.''.$Moderate4.''.$severemuscle4.'</td>
+    </tr>
+</table>';
+
 
 echo $data;
 die;

@@ -728,6 +728,44 @@
                 </tr>
             </table>
 
+            <div style="margin:15px 0;"><u><b>Objective Findings /Problems list :</b></u></div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;margin-left:20px;">
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="Mild" value="Mild" /> Mild
+                        <input type="checkbox" name="Moderate" value="Moderate" /> Moderate
+                        <input type="checkbox" name="severemuscle" value="severemuscle" /> severe muscle spasm at the 
+                        <input type="checkbox" name="RightShouldermuscles" value="RightShouldermuscles" /> Right Shoulder muscles
+                        <input type="checkbox" name="LeftShouldermuscles" value="LeftShouldermuscles" /> Left Shoulder muscles
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="Mild2" value="Mild2" /> Mild
+                        <input type="checkbox" name="Moderate2" value="Moderate2" /> Moderate
+                        <input type="checkbox" name="severemuscle2" value="severemuscle2" /> severe Limited AROM at  
+                        <input type="checkbox" name="RightShouldermuscles2" value="RightShouldermuscles2" /> Right Shoulder joint 
+                        <input type="checkbox" name="LeftShouldermuscles2" value="LeftShouldermuscles2" /> Left Shoulder joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="Mild3" value="Mild3" /> Mild
+                        <input type="checkbox" name="Moderate3" value="Moderate3" /> Moderate
+                        <input type="checkbox" name="severemuscle3" value="severemuscle3" /> severe Restricted mobility at the   
+                        <input type="checkbox" name="RightShouldermuscles3" value="RightShouldermuscles3" /> Right Shoulder joint 
+                        <input type="checkbox" name="LeftShouldermuscles3" value="LeftShouldermuscles3" /> Left Shoulder joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="Mild4" value="Mild4" /> Mild
+                        <input type="checkbox" name="Moderate4" value="Moderate4" /> Moderate
+                        <input type="checkbox" name="severemuscle4" value="severemuscle4" /> severe Decreased functional activities.
+                    </td>
+                </tr>
+            </table>
+
             <br>
             <input type="submit" value="Create PDF" class="btn btn-primary">
         </form>
