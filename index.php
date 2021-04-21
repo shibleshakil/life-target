@@ -307,7 +307,7 @@
             </table>
 
 
-            <div style="margin:15px 0;"><u><b>AROM</b></u></div>
+            <div style="margin:15px 0;"><u><b>AROM :</b></u></div>
             <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
                 <tr>
                     <td rowspan="2">Movement</td>
@@ -359,7 +359,7 @@
             </table>
 
 
-            <div style="margin:15px 0;"><u><b>Manual muscle test</b></u></div>
+            <div style="margin:15px 0;"><u><b>Manual muscle test :</b></u></div>
             <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
                 <tr>
                     <td rowspan="2">Movement</td>
@@ -409,6 +409,325 @@
                     <td>45</td>
                 </tr>
             </table>
+
+            <div style="margin:15px 0;"><u><b>Special tests :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="2">Test</td>
+                    <td colspan="2">Neck Findings</td>
+                </tr>
+                <tr>
+                    <td>Current</td>
+                </tr>
+                <tr>
+                    <td>Cervical compression Test</td>
+                    <td><input type="checkbox" name="cctPositive" value="cctPositive" /> Positive
+                    <input type="checkbox" name="cctNegative" value="cctNegative" /> Negative</td>
+                </tr>
+                <tr>
+                    <td>Cervical distraction Test</td>
+                    <td><input type="checkbox" name="cdtPositive" value="cdtPositive" /> Positive
+                    <input type="checkbox" name="cdtNegative" value="cdtNegative"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Spurling’s test</td>
+                    <td><input type="checkbox" name="stPositive" value="stPositive" /> Positive
+                    <input type="checkbox" name="stNegative" value="stNegative" /> Negative</td>
+                </tr>
+            </table>
+
+            <br>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><input type="checkbox" name="lowBack" value="lowBack" /> Low back</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Pain level (VAS): <input type="text" name="lowBackPainlevel" value="" />/10</div>
+                        <div>Previous (VAS): <input type="text" name="lowBackPrevious" value="" />/10</div>
+                        <div>Goal (6-8 weeks): Decrease pain level to <input type="text" name="lowBackGoal" value="" />/10.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>AROM :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="2">Movement</td>
+                    <td colspan="2">Range</td>
+                    <td rowspan="2">Normal</td>
+                    <td rowspan="2">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Previous</td>
+                    <td>Current</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="lowBackFlexPre" value="" /></td>
+                    <td><input type="text" name="lowBackFlexCurr" value="" /></td>
+                    <td>45</td>
+                    <td rowspan="6">Increase AROM by 10%</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="lowBackextPre" value="" /></td>
+                    <td><input type="text" name="lowBackextCurr" value="" /></td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>R Rot</td>
+                    <td><input type="text" name="lowBackrRotPre" value="" /></td>
+                    <td><input type="text" name="lowBackrRotCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>L Rot</td>
+                    <td><input type="text" name="lowBacklRotPre" value="" /></td>
+                    <td><input type="text" name="lowBacklRotCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>R Side bending</td>
+                    <td><input type="text" name="lowBackrsbPre" value="" /></td>
+                    <td><input type="text" name="lowBackrsbCurr" value="" /></td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>L Side bending</td>
+                    <td><input type="text" name="lowBacklsbPre" value="" /></td>
+                    <td><input type="text" name="lowBacklsbCurr" value="" /></td>
+                    <td>45</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>Manual muscle test :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="2">Movement</td>
+                    <td colspan="2">Range</td>
+                    <td rowspan="2">Normal</td>
+                    <td rowspan="2">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Previous</td>
+                    <td>Current</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="lowBackFlexPreManual" value="" /></td>
+                    <td><input type="text" name="lowBackFlexCurrManual" value="" /></td>
+                    <td>45</td>
+                    <td rowspan="6">Improve muscle strength by 1 grade</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="lowBackextPreManual" value="" /></td>
+                    <td><input type="text" name="lowBackextCurrManual" value="" /></td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>R Rot</td>
+                    <td><input type="text" name="lowBackrRotPreManual" value="" /></td>
+                    <td><input type="text" name="lowBackrRotCurrManual" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>L Rot</td>
+                    <td><input type="text" name="lowBacklRotPreManual" value="" /></td>
+                    <td><input type="text" name="lowBacklRotCurrManual" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>R Side bending</td>
+                     <td><input type="text" name="lowBackrsbPreManual" value="" /></td>
+                    <td><input type="text" name="lowBackrsbCurrManual" value="" /></td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>L Side bending</td>
+                    <td><input type="text" name="lowBacklsbPreManual" value="" /></td>
+                    <td><input type="text" name="lowBacklsbCurrManual" value="" /></td>
+                    <td>45</td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Special tests :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="2">Test</td>
+                    <td colspan="2">Neck Findings</td>
+                </tr>
+                <tr>
+                    <td>Current</td>
+                </tr>
+                <tr>
+                    <td>Cervical compression Test</td>
+                    <td><input type="checkbox" name="lowBackcctPositive" value="lowBackcctPositive" /> Positive
+                    <input type="checkbox" name="lowBackcctNegative" value="lowBackcctNegative" /> Negative</td>
+                </tr>
+                <tr>
+                    <td>Cervical distraction Test</td>
+                    <td><input type="checkbox" name="lowBackcdtPositive" value="lowBackcdtPositive" /> Positive
+                    <input type="checkbox" name="lowBackcdtNegative" value="lowBackcdtNegative"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Spurling’s test</td>
+                    <td><input type="checkbox" name="lowBackstPositive" value="lowBackstPositive" /> Positive
+                    <input type="checkbox" name="lowBackstNegative" value="lowBackstNegative" /> Negative</td>
+                </tr>
+            </table>
+            <br>
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><input type="checkbox" name="RightShoulder" value="RightShoulder" /> Right Shoulder  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="LeftShoulder" value="LeftShoulder" /> Left Shoulder</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Pain level (VAS): Right<input type="text" name="rightPainlevel" value="" />/10 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Left<input type="text" name="leftPainlevel" value="" />/10
+                        </div>
+                        <div>Goal (6-8 weeks): Decrease pain level to <input type="text" name="rlGoal" value="" />/10.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>AROM :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Shoulder</td>
+                    <td colspan="1">Left Shoulder</td>
+                    <td colspan="1">Normal</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="rlFlexPre" value="" /></td>
+                    <td><input type="text" name="rlFlexCurr" value="" /></td>
+                    <td>170-180</td>
+                    <td rowspan="6">Increase AROM by 10%</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="rlextPre" value="" /></td>
+                    <td><input type="text" name="rlextCurr" value="" /></td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Abd</td>
+                    <td><input type="text" name="rlrRotPre" value="" /></td>
+                    <td><input type="text" name="rlrRotCurr" value="" /></td>
+                    <td>170-180</td>
+                </tr>
+                <tr>
+                    <td>Add</td>
+                    <td><input type="text" name="rllRotPre" value="" /></td>
+                    <td><input type="text" name="rllRotCurr" value="" /></td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>ER</td>
+                    <td><input type="text" name="rlrsbPre" value="" /></td>
+                    <td><input type="text" name="rlrsbCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>IR</td>
+                    <td><input type="text" name="rllsbPre" value="" /></td>
+                    <td><input type="text" name="rllsbCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>Manual muscle test :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Shoulder</td>
+                    <td colspan="1">Left Shoulder</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="rlFlexPreManual" value="" /></td>
+                    <td><input type="text" name="rlFlexCurrManual" value="" /></td>
+                    <td rowspan="6">Improve muscle strength by 1 grade</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="rlextPreManual" value="" /></td>
+                    <td><input type="text" name="rlextCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Abd</td>
+                    <td><input type="text" name="rlrRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlrRotCurrManual" value="" /></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Add</td>
+                    <td><input type="text" name="rllRotPreManual" value="" /></td>
+                    <td><input type="text" name="rllRotCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>ER</td>
+                    <td><input type="text" name="rleRotPreManual" value="" /></td>
+                    <td><input type="text" name="rleRotCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>IR</td>
+                     <td><input type="text" name="rlrsbPreManual" value="" /></td>
+                    <td><input type="text" name="rlrsbCurrManual" value="" /></td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Special tests :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Test</td>
+                    <td colspan="1">Right Shoulder Findings</td>
+                    <td colspan="1">Left Shoulder Findings</td>
+                </tr>
+                <tr>
+                    <td>Hawkin’s / Neer’s test</td>
+                    <td><input type="checkbox" name="rlcdtPositiveR" value="rlcdtPositiveR" /> Positive
+                    <input type="checkbox" name="rlcdtNegativeR" value="rlcdtNegativeR"/> Negative</td>
+                    <td><input type="checkbox" name="rlcdtPositiveL" value="rlcdtPositiveL" /> Positive
+                    <input type="checkbox" name="rlcdtNegativeL" value="rlcdtNegativeL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Empty Can test</td>
+                    <td><input type="checkbox" name="rlcdtPositiveER" value="rlcdtPositiveER" /> Positive
+                    <input type="checkbox" name="rlcdtNegativeER" value="rlcdtNegativeER"/> Negative</td>
+                    <td><input type="checkbox" name="rlcdtPositiveEL" value="rlcdtPositiveEL" /> Positive
+                    <input type="checkbox" name="rlcdtNegativeEL" value="rlcdtNegativeEL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Speed’s test</td>
+                    <td><input type="checkbox" name="rlstPositiveSR" value="rlstPositiveSR" /> Positive
+                    <input type="checkbox" name="rlstNegativeSR" value="rlstNegativeSR" /> Negative</td>
+                    <td><input type="checkbox" name="rlstPositiveSL" value="rlstPositiveSL" /> Positive
+                    <input type="checkbox" name="rlstNegativeSL" value="rlstNegativeSL" /> Negative</td>
+                </tr>
+            </table>
+
             <br>
             <input type="submit" value="Create PDF" class="btn btn-primary">
         </form>

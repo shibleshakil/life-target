@@ -376,4 +376,35 @@
     </tr>
 </table>
 
+<div style="margin:15px 0;"><u><b>Special tests;</b></u></div>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="2">Test</td>
+        <td colspan="2">Neck Findings</td>
+    </tr>
+    <tr>
+        <td>Current</td>
+    </tr>
+    <tr>
+        <td>Cervical compression Test</td>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Negative</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Positive</td>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Negative</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Positive</td>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Negative</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Positive</td>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Negative</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Positive</td>
+        <td><input type="checkbox" name="p2_1" <?php if(@$re['p2_1']==1){ echo 'checked'; } ?> /> Negative</td>
+    </tr>
+</table>
+
 </div>

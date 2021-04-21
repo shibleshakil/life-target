@@ -671,7 +671,7 @@ if(isset($_POST['NeckGoal']) && $_POST['NeckGoal']){
 }
 
 $data .= '<br>'.'<br>';
-$data .= '<u><b>AROM</b></u>';
+$data .= '<u><b>AROM :</b></u>';
 $data .= '<br>'.'<br>';
 $data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
     <tr>
@@ -724,7 +724,7 @@ $data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="t
 </table>';
 
 $data .= '<br>'.'<br>';
-$data .= '<u><b>Manual muscle test</b></u>';
+$data .= '<u><b>Manual muscle test :</b></u>';
 $data .= '<br>'.'<br>';
 
 $data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
@@ -777,9 +777,487 @@ $data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="t
     </tr>
 </table>';
 
+$data .= '<br>'.'<br>';
+if(isset($_POST['cctPositive']) && $_POST['cctPositive'] == "cctPositive"){
+    $cctPositive = '<input type="checkbox" checked="checked" > Positve ';
+}else{
+    $cctPositive = '<input type="checkbox"> Positve ';
+}
+if(isset($_POST['cctNegative']) && $_POST['cctNegative'] == "cctNegative"){
+    $cctNegative = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $cctNegative = '<input type="checkbox"> Negative ';
+}
 
-// echo $data;
-// die;
+if(isset($_POST['cdtPositive']) && $_POST['cdtPositive'] == "cdtPositive"){
+    $cdtPositive = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $cdtPositive = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['cdtNegative']) && $_POST['cdtNegative'] == "cdtNegative"){
+    $cdtNegative = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $cdtNegative = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['stPositive']) && $_POST['stPositive'] == "stPositive"){
+    $stPositive = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $stPositive = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['stNegative']) && $_POST['stNegative'] == "stNegative"){
+    $stNegative = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $stNegative = '<input type="checkbox"> Negative ';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Special tests :</b></u></div>';
+$data .= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="2">Test</td>
+        <td colspan="2">Neck Findings</td>
+    </tr>
+    <tr>
+        <td>Current</td>
+    </tr>
+    <tr>
+        <td>Cervical compression Test</td>
+        <td>'.$cctPositive.' '.$cctNegative.'</td>
+    </tr>
+    <tr>
+        <td>Cervical distraction Test</td>
+        <td>'.$cdtPositive.' '.$cdtNegative.'</td>
+    </tr>
+    <tr>
+        <td>Spurling’s test</td>
+        <td>'.$stPositive.' '.$stNegative.'</td>
+    </tr>
+</table>';
+$data .= '<br>'.'<br>';
+
+if(isset($_POST['lowBack']) && $_POST['lowBack'] == "lowBack"){
+    $data .= '<input type="checkbox" checked="checked" > Low Back ';
+}else{
+    $data .= '<input type="checkbox"> Low Back ';
+}
+
+$data .= '<br>'.'<br>';
+
+if(isset($_POST['lowBackPainlevel']) && $_POST['lowBackPainlevel']){
+    $data .= 'Pain level (VAS) : '.'<u> '.$_POST['lowBackPainlevel'].' </u>'.'/10';
+}else{
+    $data .= 'Pain level (VAS) : '.'____________'.'/10';
+}
+$data .= '<br>';
+
+if(isset($_POST['lowBackPrevious']) && $_POST['lowBackPrevious']){
+    $data .= 'Previous (VAS) : '.'<u> '.$_POST['lowBackPrevious'].' </u>'.'/10';
+}else{
+    $data .= 'Previous (VAS) : '.'____________'.'/10';
+}
+$data .= '<br>';
+
+if(isset($_POST['lowBackGoal']) && $_POST['lowBackGoal']){
+    $data .= 'Goal (6-8 weeks) : Decrease pain level to  '.'<u> '.$_POST['lowBackGoal'].' </u>'.'/10';
+}else{
+    $data .= 'Goal (6-8 weeks) : Decrease pain level to  '.'____________'.'/10';
+}
+
+$data .= '<br>'.'<br>';
+$data .= '<u><b>AROM :</b></u>';
+$data .= '<br>'.'<br>';
+$data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="2">Movement</td>
+        <td colspan="2">Range</td>
+        <td rowspan="2">Normal</td>
+        <td rowspan="2">Goal (6-8 weeks)</td>
+    </tr> 
+    <tr>
+        <td>Previous</td>
+        <td>Current</td>
+    </tr>
+    <tr>
+        <td>Flex</td>
+        <td>'.$_POST['lowBackFlexPre'].'</td>
+        <td>'.$_POST['lowBackFlexCurr'].'</td>
+        <td>45</td>
+        <td rowspan="6">Increase AROM by 10%</td>
+    </tr>
+    <tr>
+        <td>Ext</td>
+        <td>'.$_POST['lowBackextPre'].'</td>
+        <td>'.$_POST['lowBackextCurr'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>R Rot</td>
+        <td>'.$_POST['lowBackrRotPre'].'</td>
+        <td>'.$_POST['lowBackrRotCurr'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>L Rot</td>
+        <td>'.$_POST['lowBacklRotPre'].'</td>
+        <td>'.$_POST['lowBacklRotCurr'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>R Side bending</td>
+        <td>'.$_POST['lowBackrsbPre'].'</td>
+        <td>'.$_POST['lowBackrsbCurr'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>L Side bending</td>
+        <td>'.$_POST['lowBacklsbPre'].'</td>
+        <td>'.$_POST['lowBacklsbCurr'].'</td>
+        <td>45</td>
+    </tr>
+</table>';
+
+$data .= '<br>'.'<br>';
+$data .= '<u><b>Manual muscle test :</b></u>';
+$data .= '<br>'.'<br>';
+
+$data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="2">Movement</td>
+        <td colspan="2">Range</td>
+        <td rowspan="2">Normal</td>
+        <td rowspan="2">Goal (6-8 weeks)</td>
+    </tr>
+    <tr>
+        <td>Previous</td>
+        <td>Current</td>
+    </tr>
+    <tr>
+        <td>Flex</td>
+        <td>'.$_POST['lowBackFlexPreManual'].'</td>
+        <td>'.$_POST['lowBackFlexCurrManual'].'</td>
+        <td>45</td>
+        <td rowspan="6">Improve muscle strength by 1 grade</td>
+    </tr>
+    <tr>
+        <td>Ext</td>
+        <td>'.$_POST['lowBackextPreManual'].'</td>
+        <td>'.$_POST['lowBackextCurrManual'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>R Rot</td>
+        <td>'.$_POST['lowBackrRotPreManual'].'</td>
+        <td>'.$_POST['lowBackrRotCurrManual'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>L Rot</td>
+        <td>'.$_POST['lowBacklRotPreManual'].'</td>
+        <td>'.$_POST['lowBacklRotCurrManual'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>R Side bending</td>
+        <td>'.$_POST['lowBackrsbPreManual'].'</td>
+        <td>'.$_POST['lowBackrsbCurrManual'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>L Side bending</td>
+        <td>'.$_POST['lowBacklsbPreManual'].'</td>
+        <td>'.$_POST['lowBacklsbCurrManual'].'</td>
+        <td>45</td>
+    </tr>
+</table>';
+
+$data .= '<br>'.'<br>';
+if(isset($_POST['lowBackcctPositive']) && $_POST['lowBackcctPositive'] == "lowBackcctPositive"){
+    $lowBackcctPositive = '<input type="checkbox" checked="checked" > Positve ';
+}else{
+    $lowBackcctPositive = '<input type="checkbox"> Positve ';
+}
+if(isset($_POST['lowBackcctNegative']) && $_POST['lowBackcctNegative'] == "lowBackcctNegative"){
+    $lowBackcctNegative = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $lowBackcctNegative = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['lowBackcdtPositive']) && $_POST['lowBackcdtPositive'] == "lowBackcdtPositive"){
+    $lowBackcdtPositive = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $lowBackcdtPositive = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['lowBackcdtNegative']) && $_POST['lowBackcdtNegative'] == "lowBackcdtNegative"){
+    $lowBackcdtNegative = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $lowBackcdtNegative = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['lowBackstPositive']) && $_POST['lowBackstPositive'] == "lowBackstPositive"){
+    $lowBackstPositive = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $lowBackstPositive = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['lowBackstNegative']) && $_POST['lowBackstNegative'] == "lowBackstNegative"){
+    $lowBackstNegative = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $lowBackstNegative = '<input type="checkbox"> Negative ';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Special tests :</b></u></div>';
+$data .= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="2">Test</td>
+        <td colspan="2">Neck Findings</td>
+    </tr>
+    <tr>
+        <td>Current</td>
+    </tr>
+    <tr>
+        <td>Cervical compression Test</td>
+        <td>'.$lowBackcctPositive.' '.$lowBackcctNegative.'</td>
+    </tr>
+    <tr>
+        <td>Cervical distraction Test</td>
+        <td>'.$lowBackcdtPositive.' '.$lowBackcdtNegative.'</td>
+    </tr>
+    <tr>
+        <td>Spurling’s test</td>
+        <td>'.$lowBackstPositive.' '.$lowBackstNegative.'</td>
+    </tr>
+</table>';
+//right left
+$data .= '<br>'.'<br>';
+
+if(isset($_POST['RightShoulder']) && $_POST['RightShoulder'] == "RightShoulder"){
+    $RightShoulder = '<input type="checkbox" checked="checked" > Right Shoulder ';
+}else{
+    $RightShoulder = '<input type="checkbox"> Right Shoulder ';
+}
+if(isset($_POST['LeftShoulder']) && $_POST['LeftShoulder'] == "LeftShoulder"){
+    $LeftShoulder = '<input type="checkbox" checked="checked" > Left Shoulder ';
+}else{
+    $LeftShoulder = '<input type="checkbox"> Left Shoulder ';
+}
+
+if(isset($_POST['rightPainlevel']) && $_POST['rightPainlevel']){
+    $rightPainlevel ='<u> '.$_POST['rightPainlevel'].' </u>'.'/10';
+}else{
+    $rightPainlevel = '____________'.'/10';
+}
+if(isset($_POST['leftPainlevel']) && $_POST['leftPainlevel']){
+    $leftPainlevel = '<u> '.$_POST['leftPainlevel'].' </u>'.'/10.';
+}else{
+    $leftPainlevel = '____________'.'/10.';
+}
+if(isset($_POST['rlGoal']) && $_POST['rlGoal']){
+    $rlGoal = '<u> '.$_POST['rlGoal'].' </u>'.'/10.';
+}else{
+    $rlGoal = '____________'.'/10.';
+}
+
+$data .= '<table>
+    <tr>
+        <td>'.$RightShoulder.''.$LeftShoulder.'</td>
+    </tr>
+    <td>
+        <div>Pain level (VAS): Right '.$rightPainlevel.' 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Left '.$leftPainlevel.'
+        </div>
+        <div>Goal (6-8 weeks): Decrease pain level to '.$rlGoal.'
+        </div>
+    </td>
+</table>';
+
+$data .= '<br>'.'<br>';
+$data .= '<u><b>AROM :</b></u>';
+$data .= '<br>'.'<br>';
+$data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="1">Movement</td>
+        <td colspan="1">Right Shoulder</td>
+        <td colspan="1">Left Shoulder</td>
+        <td colspan="1">Normal</td>
+        <td rowspan="1">Goal (6-8 weeks)</td>
+    </tr> 
+    <tr>
+        <td>Flex</td>
+        <td>'.$_POST['rlFlexPre'].'</td>
+        <td>'.$_POST['rlFlexCurr'].'</td>
+        <td>170-180</td>
+        <td rowspan="6">Increase AROM by 10%</td>
+    </tr>
+    <tr>
+        <td>Ext</td>
+        <td>'.$_POST['rlextPre'].'</td>
+        <td>'.$_POST['rlextCurr'].'</td>
+        <td>40</td>
+    </tr>
+    <tr>
+        <td>Abd</td>
+        <td>'.$_POST['rlrRotPre'].'</td>
+        <td>'.$_POST['rlrRotCurr'].'</td>
+        <td>170-180</td>
+    </tr>
+    <tr>
+        <td>Add</td>
+        <td>'.$_POST['rllRotPre'].'</td>
+        <td>'.$_POST['rllRotCurr'].'</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>ER</td>
+        <td>'.$_POST['rlrsbPre'].'</td>
+        <td>'.$_POST['rlrsbCurr'].'</td>
+        <td>80-90</td>
+    </tr>
+    <tr>
+        <td>IR</td>
+        <td>'.$_POST['rllsbPre'].'</td>
+        <td>'.$_POST['rllsbCurr'].'</td>
+        <td>80-90</td>
+    </tr>
+</table>';
+
+$data .= '<br>'.'<br>';
+$data .= '<u><b>Manual muscle test :</b></u>';
+$data .= '<br>'.'<br>';
+
+$data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="1">Movement</td>
+        <td colspan="1">Right Shoulder</td>
+        <td colspan="1">Left Shoulder</td>
+        <td rowspan="1">Goal (6-8 weeks)</td>
+    </tr>
+    <tr>
+        <td>Flex</td>
+        <td>'.$_POST['rlFlexPreManual'].'</td>
+        <td>'.$_POST['rlFlexCurrManual'].'</td>
+        <td rowspan="6">Improve muscle strength by 1 grade</td>
+    </tr>
+    <tr>
+        <td>Ext</td>
+        <td>'.$_POST['rlextPreManual'].'</td>
+        <td>'.$_POST['rlextCurrManual'].'</td>
+    </tr>
+    <tr>
+        <td>Abd</td>
+        <td>'.$_POST['rlrRotPreManual'].'</td>
+        <td>'.$_POST['rlrRotCurrManual'].'</td>
+    </tr>
+    <tr>
+        <td>Add</td>
+        <td>'.$_POST['rllRotPreManual'].'</td>
+        <td>'.$_POST['rllRotCurrManual'].'</td>
+    </tr>
+    <tr>
+        <td>ER</td>
+        <td>'.$_POST['rleRotPreManual'].'</td>
+        <td>'.$_POST['rleRotCurrManual'].'</td>
+    </tr>
+    <tr>
+        <td>L Side bending</td>
+        <td>'.$_POST['rlrsbPreManual'].'</td>
+        <td>'.$_POST['rlrsbCurrManual'].'</td>
+    </tr>
+</table>';
+
+$data .= '<br>'.'<br>';
+if(isset($_POST['rlcdtPositiveR']) && $_POST['rlcdtPositiveR'] == "rlcdtPositiveR"){
+    $rlcdtPositiveR = '<input type="checkbox" checked="checked" > Positve ';
+}else{
+    $rlcdtPositiveR = '<input type="checkbox"> Positve ';
+}
+if(isset($_POST['rlcdtNegativeR']) && $_POST['rlcdtNegativeR'] == "rlcdtNegativeR"){
+    $rlcdtNegativeR = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlcdtNegativeR = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlcdtPositiveL']) && $_POST['rlcdtPositiveL'] == "rlcdtPositiveL"){
+    $rlcdtPositiveL = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlcdtPositiveL = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlcdtNegativeL']) && $_POST['rlcdtNegativeL'] == "rlcdtNegativeL"){
+    $rlcdtNegativeL = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlcdtNegativeL = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlcdtPositiveER']) && $_POST['rlcdtPositiveER'] == "rlcdtPositiveER"){
+    $rlcdtPositiveER = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlcdtPositiveER = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlcdtNegativeER']) && $_POST['rlcdtNegativeER'] == "rlcdtNegativeER"){
+    $rlcdtNegativeER = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlcdtNegativeER = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlcdtPositiveEL']) && $_POST['rlcdtPositiveEL'] == "rlcdtPositiveEL"){
+    $rlcdtPositiveEL = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlcdtPositiveEL = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlcdtNegativeEL']) && $_POST['rlcdtNegativeEL'] == "rlcdtNegativeEL"){
+    $rlcdtNegativeEL = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlcdtNegativeEL = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlstPositiveSR']) && $_POST['rlstPositiveSR'] == "rlstPositiveSR"){
+    $rlstPositiveSR = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlstPositiveSR = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlstNegativeSR']) && $_POST['rlstNegativeSR'] == "rlstNegativeSR"){
+    $rlstNegativeSR = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlstNegativeSR = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlstPositiveSL']) && $_POST['rlstPositiveSL'] == "rlstPositiveSL"){
+    $rlstPositiveSL = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlstPositiveSL = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlstNegativeSL']) && $_POST['rlstNegativeSL'] == "rlstNegativeSL"){
+    $rlstNegativeSL = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlstNegativeSL = '<input type="checkbox"> Negative ';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Special tests :</b></u></div>';
+$data .= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="1">Test</td>
+        <td colspan="1">Right Shoulder Findings</td>
+        <td colspan="1">Left Shoulder Findings</td>
+    </tr>
+    <tr>
+        <td>Hawkin’s / Neer’s test</td>
+        <td>'.$rlcdtPositiveR.' '.$rlcdtNegativeR.'</td>
+        <td>'.$rlcdtPositiveL.' '.$rlcdtNegativeL.'</td>
+    </tr>
+    <tr>
+        <td>Empty Can test</td>
+        <td>'.$rlcdtPositiveER.' '.$rlcdtNegativeER.'</td>
+        <td>'.$rlcdtPositiveEL.' '.$rlcdtNegativeEL.'</td>
+    </tr>
+    <tr>
+        <td>Speed’s test</td>
+        <td>'.$rlstPositiveSR.' '.$rlstNegativeSR.'</td>
+        <td>'.$rlstPositiveSL.' '.$rlstNegativeSL.'</td>
+    </tr>
+</table>';
+
+
+echo $data;
+die;
 // $mpdf->SetFont('Arial','B',16);
 $mpdf->WriteHTML($data);
 $mpdf->Output('data.pdf', 'D');
