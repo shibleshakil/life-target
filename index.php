@@ -291,7 +291,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="Neck" value="Neck" /> Neck</td>
+                    <td style="color:red"><input type="checkbox" name="Neck" value="Neck" /> Neck</td>
                 </tr>
                 <tr>
                     <td>
@@ -439,7 +439,7 @@
             <br>
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td><input type="checkbox" name="lowBack" value="lowBack" /> Low back</td>
+                    <td style="color:red"><input type="checkbox" name="lowBack" value="lowBack" /> Low back</td>
                 </tr>
                 <tr>
                     <td>
@@ -587,7 +587,7 @@
 
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td><input type="checkbox" name="RightShoulder" value="RightShoulder" /> Right Shoulder  
+                    <td style="color:red"><input type="checkbox" name="RightShoulder" value="RightShoulder" /> Right Shoulder  
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="checkbox" name="LeftShoulder" value="LeftShoulder" /> Left Shoulder</td>
                 </tr>
@@ -762,6 +762,166 @@
                         <input type="checkbox" name="Mild4" value="Mild4" /> Mild
                         <input type="checkbox" name="Moderate4" value="Moderate4" /> Moderate
                         <input type="checkbox" name="severemuscle4" value="severemuscle4" /> severe Decreased functional activities.
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="color:red"><input type="checkbox" name="RightElbow" value="RightElbow" /> Right Elbow  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="LeftElbow" value="LeftElbow" /> Left Elbow</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Pain level (VAS): Right<input type="text" name="rightElowPainlevel" value="" />/10 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Left<input type="text" name="leftElowPainlevel" value="" />/10
+                        </div>
+                        <div>Goal (6-8 weeks): Decrease pain level to <input type="text" name="rlElbowGoal" value="" />/10.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>AROM :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Elbow</td>
+                    <td colspan="1">Left Elbow</td>
+                    <td colspan="1">Normal</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="rlElbowFlexPre" value="" /></td>
+                    <td><input type="text" name="rlElbowFlexCurr" value="" /></td>
+                    <td>170-180</td>
+                    <td rowspan="6">Increase AROM by 10%</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="rlElbowextPre" value="" /></td>
+                    <td><input type="text" name="rlElbowextCurr" value="" /></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Supination</td>
+                    <td><input type="text" name="rlElbowrRotPre" value="" /></td>
+                    <td><input type="text" name="rlElbowrRotCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>Pronation</td>
+                    <td><input type="text" name="rlElbowlRotPre" value="" /></td>
+                    <td><input type="text" name="rlElbowlRotCurr" value="" /></td>
+                    <td>80</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>Manual muscle test :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Shoulder</td>
+                    <td colspan="1">Left Shoulder</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="rlElbowFlexPreManual" value="" /></td>
+                    <td><input type="text" name="rlElbowFlexCurrManual" value="" /></td>
+                    <td rowspan="6">Improve muscle strength by 1 grade</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="rlElbowextPreManual" value="" /></td>
+                    <td><input type="text" name="rlElbowextCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Supination</td>
+                    <td><input type="text" name="rlElbowrRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlElbowrRotCurrManual" value="" /></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Pronation</td>
+                    <td><input type="text" name="rlElbowlRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlElbowlRotCurrManual" value="" /></td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Special tests :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Test</td>
+                    <td colspan="1">Right Elbow Findings</td>
+                    <td colspan="1">Left Elbow Findings</td>
+                </tr>
+                <tr>
+                    <td>Cozen’s Lateral Epicondylitis test</td>
+                    <td><input type="checkbox" name="rlElbowcdtPositiveR" value="rlElbowcdtPositiveR" /> Positive
+                    <input type="checkbox" name="rlElbowcdtNegativeR" value="rlElbowcdtNegativeR"/> Negative</td>
+                    <td><input type="checkbox" name="rlElbowcdtPositiveL" value="rlElbowcdtPositiveL" /> Positive
+                    <input type="checkbox" name="rlElbowcdtNegativeL" value="rlElbowcdtNegativeL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Tinel’s test at the cubital tunnel</td>
+                    <td><input type="checkbox" name="rlElbowcdtPositiveER" value="rlElbowcdtPositiveER" /> Positive
+                    <input type="checkbox" name="rlElbowcdtNegativeER" value="rlElbowcdtNegativeER"/> Negative</td>
+                    <td><input type="checkbox" name="rlElbowcdtPositiveEL" value="rlElbowcdtPositiveEL" /> Positive
+                    <input type="checkbox" name="rlElbowcdtNegativeEL" value="rlElbowcdtNegativeEL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Golfer’s elbow test</td>
+                    <td><input type="checkbox" name="rlElbowstPositiveSR" value="rlElbowstPositiveSR" /> Positive
+                    <input type="checkbox" name="rlElbowstNegativeSR" value="rlElbowstNegativeSR" /> Negative</td>
+                    <td><input type="checkbox" name="rlElbowstPositiveSL" value="rlElbowstPositiveSL" /> Positive
+                    <input type="checkbox" name="rlElbowstNegativeSL" value="rlElbowstNegativeSL" /> Negative</td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Objective Findings /Problems list :</b></u></div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;margin-left:20px;">
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildElbow" value="MildElbow" /> Mild
+                        <input type="checkbox" name="ModerateElbow" value="ModerateElbow" /> Moderate
+                        <input type="checkbox" name="severemuscleElbow" value="severemuscleElbow" /> severe muscle spasm at the 
+                        <input type="checkbox" name="RightElbowmuscles" value="RightElbowmuscles" /> Right Shoulder muscles
+                        <input type="checkbox" name="LeftElbowmuscles" value="LeftElbowmuscles" /> Left Shoulder muscles
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildElbow2" value="MildElbow2" /> Mild
+                        <input type="checkbox" name="ModerateElbow2" value="ModerateElbow2" /> Moderate
+                        <input type="checkbox" name="severemuscleElbow2" value="severemuscleElbow2" /> severe Limited AROM at  
+                        <input type="checkbox" name="RightElbowmuscles2" value="RightElbowmuscles2" /> Right Shoulder joint 
+                        <input type="checkbox" name="LeftElbowmuscles2" value="LeftElbowmuscles2" /> Left Shoulder joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildElbow3" value="MildElbow3" /> Mild
+                        <input type="checkbox" name="ModerateElbow3" value="ModerateElbow3" /> Moderate
+                        <input type="checkbox" name="severemuscleElbow3" value="severemuscleElbow3" /> severe Restricted mobility at the   
+                        <input type="checkbox" name="RightElbowmuscles3" value="RightElbowmuscles3" /> Right Shoulder joint 
+                        <input type="checkbox" name="LeftElbowmuscles3" value="LeftElbowmuscles3" /> Left Shoulder joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildElbow4" value="MildElbow4" /> Mild
+                        <input type="checkbox" name="ModerateElbow4" value="ModerateElbow4" /> Moderate
+                        <input type="checkbox" name="severemuscleElbow4" value="severemuscleElbow4" /> severe Decreased functional activities.
                     </td>
                 </tr>
             </table>
