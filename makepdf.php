@@ -2295,17 +2295,17 @@ $data .= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="
         <td colspan="1">Left Hip Findings</td>
     </tr>
     <tr>
-        <td>Hawkin’s / Neer’s test</td>
+        <td>Scour test</td>
         <td>'.$rlHipcdtPositiveR.' '.$rlHipcdtNegativeR.'</td>
         <td>'.$rlHipcdtPositiveL.' '.$rlHipcdtNegativeL.'</td>
     </tr>
     <tr>
-        <td>Empty Can test</td>
+        <td>Thomas test</td>
         <td>'.$rlHipcdtPositiveER.' '.$rlHipcdtNegativeER.'</td>
         <td>'.$rlHipcdtPositiveEL.' '.$rlHipcdtNegativeEL.'</td>
     </tr>
     <tr>
-        <td>Speed’s test</td>
+        <td>FABER test</td>
         <td>'.$rlHipstPositiveSR.' '.$rlHipstNegativeSR.'</td>
         <td>'.$rlHipstPositiveSL.' '.$rlHipstNegativeSL.'</td>
     </tr>
@@ -2378,6 +2378,11 @@ if(isset($_POST['MildHip4']) && $_POST['MildHip4'] == "MildHip4"){
 }else{
     $MildHip4 = '<input type="checkbox"> Mild ';
 }
+if(isset($_POST['MildHip5']) && $_POST['MildHip5'] == "MildHip5"){
+    $MildHip5 = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $MildHip5 = '<input type="checkbox"> Mild ';
+}
 
 if(isset($_POST['ModerateHip']) && $_POST['ModerateHip'] == "ModerateHip"){
     $ModerateHip = '<input type="checkbox" checked="checked" > Moderate ';
@@ -2399,6 +2404,11 @@ if(isset($_POST['ModerateHip4']) && $_POST['ModerateHip4'] == "ModerateHip4"){
 }else{
     $ModerateHip4 = '<input type="checkbox"> Moderate ';
 }
+if(isset($_POST['ModerateHip5']) && $_POST['ModerateHip5'] == "ModerateHip5"){
+    $ModerateHip5 = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $ModerateHip5 = '<input type="checkbox"> Moderate ';
+}
 
 if(isset($_POST['severemuscleHip']) && $_POST['severemuscleHip'] == "severemuscleHip"){
     $severemuscleHip = '<input type="checkbox" checked="checked" > severe muscle spasm at the ';
@@ -2419,6 +2429,11 @@ if(isset($_POST['severemuscleHip4']) && $_POST['severemuscleHip4'] == "severemus
     $severemuscleHip4 = '<input type="checkbox" checked="checked" > severe Decreased functional activities. ';
 }else{
     $severemuscleHip4 = '<input type="checkbox"> severe Decreased functional activities. ';
+}
+if(isset($_POST['severemuscleHip5']) && $_POST['severemuscleHip5'] == "severemuscleHip5"){
+    $severemuscleHip5 = '<input type="checkbox" checked="checked" > severe Decreased functional activities. ';
+}else{
+    $severemuscleHip5 = '<input type="checkbox"> severe Decreased functional activities. ';
 }
 
 if(isset($_POST['RightHipmusclesHip']) && $_POST['RightHipmusclesHip'] == "RightHipmusclesHip"){
@@ -2463,6 +2478,9 @@ $data .= '<table width="100%" cellpadding="0" cellspacing="0" style="text-align:
     </tr>
     <tr>
         <td> - '.$MildHip3.''.$ModerateHip3.''.$severemuscleHip3.''.$RightHipmusclesHip3.''.$LeftHipmusclesHip3.'</td>
+    </tr>
+    <tr>
+        <td> - '.$MildHip5.''.$ModerateHip5.''.$severemuscleHip5.'</td>
     </tr>
     <tr>
         <td> - '.$MildHip4.''.$ModerateHip4.''.$severemuscleHip4.'</td>

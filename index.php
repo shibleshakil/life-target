@@ -1209,21 +1209,21 @@
                     <td colspan="1">Left Hip Findings</td>
                 </tr>
                 <tr>
-                    <td>Hawkin’s / Neer’s test</td>
+                    <td>Scour test</td>
                     <td><input type="checkbox" name="rlHipcdtPositiveR" value="rlHipcdtPositiveR" /> Positive
                     <input type="checkbox" name="rlHipcdtNegativeR" value="rlHipcdtNegativeR"/> Negative</td>
                     <td><input type="checkbox" name="rlHipcdtPositiveL" value="rlHipcdtPositiveL" /> Positive
                     <input type="checkbox" name="rlHipcdtNegativeL" value="rlHipcdtNegativeL"/> Negative</td>
                 </tr>
                 <tr>
-                    <td>Empty Can test</td>
+                    <td>Thomas test</td>
                     <td><input type="checkbox" name="rlHipcdtPositiveER" value="rlHipcdtPositiveER" /> Positive
                     <input type="checkbox" name="rlHipcdtNegativeER" value="rlHipcdtNegativeER"/> Negative</td>
                     <td><input type="checkbox" name="rlHipcdtPositiveEL" value="rlHipcdtPositiveEL" /> Positive
                     <input type="checkbox" name="rlHipcdtNegativeEL" value="rlHipcdtNegativeEL"/> Negative</td>
                 </tr>
                 <tr>
-                    <td>Speed’s test</td>
+                    <td>FABER test</td>
                     <td><input type="checkbox" name="rlHipstPositiveSR" value="rlHipstPositiveSR" /> Positive
                     <input type="checkbox" name="rlHipstNegativeSR" value="rlHipstNegativeSR" /> Negative</td>
                     <td><input type="checkbox" name="rlHipstPositiveSL" value="rlHipstPositiveSL" /> Positive
@@ -1273,6 +1273,13 @@
                         <input type="checkbox" name="severemuscleHip3" value="severemuscleHip3" /> severe Restricted mobility at the   
                         <input type="checkbox" name="RightHipmusclesHip3" value="RightHipmusclesHip3" /> Right Hip joint 
                         <input type="checkbox" name="LeftHipmusclesHip3" value="LeftHipmusclesHip3" /> Left Hip joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildHip5" value="MildHip5" /> Mild
+                        <input type="checkbox" name="ModerateHip5" value="ModerateHip5" /> Moderate
+                        <input type="checkbox" name="severemuscleHip5" value="severemuscleHip5" /> severe Gait deviation
                     </td>
                 </tr>
                 <tr>
