@@ -1292,6 +1292,718 @@
             </table>
             <br>
 
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="color:red"><input type="checkbox" name="RightKnee" value="RightKnee" /> Right Knee  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="LeftKnee" value="LeftKnee" /> Left Knee</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Pain level (VAS): Right<input type="text" name="rightKneePainlevel" value="" />/10 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Left<input type="text" name="leftKneePainlevel" value="" />/10
+                        </div>
+                        <div>Goal (6-8 weeks): Decrease pain level to <input type="text" name="rlKneeGoal" value="" />/10.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>AROM :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Knee</td>
+                    <td colspan="1">Left Knee</td>
+                    <td colspan="1">Normal</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="rlKneeFlexPre" value="" /></td>
+                    <td><input type="text" name="rlKneeFlexCurr" value="" /></td>
+                    <td>170-180</td>
+                    <td rowspan="6">Increase AROM by 10%</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="rlKneeextPre" value="" /></td>
+                    <td><input type="text" name="rlKneeextCurr" value="" /></td>
+                    <td>40</td>
+                </tr>
+                <!-- <tr>
+                    <td>Abd</td>
+                    <td><input type="text" name="rlKneerRotPre" value="" /></td>
+                    <td><input type="text" name="rlKneerRotCurr" value="" /></td>
+                    <td>170-180</td>
+                </tr>
+                <tr>
+                    <td>Add</td>
+                    <td><input type="text" name="rlKneelRotPre" value="" /></td>
+                    <td><input type="text" name="rlKneelRotCurr" value="" /></td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>ER</td>
+                    <td><input type="text" name="rlKneersbPre" value="" /></td>
+                    <td><input type="text" name="rlKneersbCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>IR</td>
+                    <td><input type="text" name="rlKneelsbPre" value="" /></td>
+                    <td><input type="text" name="rlKneelsbCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr> -->
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>Manual muscle test :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Knee</td>
+                    <td colspan="1">Left Knee</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Flex</td>
+                    <td><input type="text" name="rlKneeFlexPreManual" value="" /></td>
+                    <td><input type="text" name="rlKneeFlexCurrManual" value="" /></td>
+                    <td rowspan="6">Improve muscle strength by 1 grade</td>
+                </tr>
+                <tr>
+                    <td>Ext</td>
+                    <td><input type="text" name="rlKneeextPreManual" value="" /></td>
+                    <td><input type="text" name="rlKneeextCurrManual" value="" /></td>
+                </tr>
+                <!-- <tr>
+                    <td>Abd</td>
+                    <td><input type="text" name="rlKneerRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlKneerRotCurrManual" value="" /></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Add</td>
+                    <td><input type="text" name="rlKneelRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlKneelRotCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>ER</td>
+                    <td><input type="text" name="rlKneeeRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlKneeeRotCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>IR</td>
+                     <td><input type="text" name="rlKneersbPreManual" value="" /></td>
+                    <td><input type="text" name="rlKneersbCurrManual" value="" /></td>
+                </tr> -->
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Special tests :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Test</td>
+                    <td colspan="1">Right Knee Findings</td>
+                    <td colspan="1">Left Knee Findings</td>
+                </tr>
+                <tr>
+                    <td>Anterior Drawer test</td>
+                    <td><input type="checkbox" name="rlKneecdtPositiveR" value="rlKneecdtPositiveR" /> Positive
+                    <input type="checkbox" name="rlKneecdtNegativeR" value="rlKneecdtNegativeR"/> Negative</td>
+                    <td><input type="checkbox" name="rlKneecdtPositiveL" value="rlKneecdtPositiveL" /> Positive
+                    <input type="checkbox" name="rlKneecdtNegativeL" value="rlKneecdtNegativeL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Valgus Stress test</td>
+                    <td><input type="checkbox" name="rlKneecdtPositiveER" value="rlKneecdtPositiveER" /> Positive
+                    <input type="checkbox" name="rlKneecdtNegativeER" value="rlKneecdtNegativeER"/> Negative</td>
+                    <td><input type="checkbox" name="rlKneecdtPositiveEL" value="rlKneecdtPositiveEL" /> Positive
+                    <input type="checkbox" name="rlKneecdtNegativeEL" value="rlKneecdtNegativeEL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Varus Stress test</td>
+                    <td><input type="checkbox" name="rlKneestPositiveSR" value="rlKneestPositiveSR" /> Positive
+                    <input type="checkbox" name="rlKneestNegativeSR" value="rlKneestNegativeSR" /> Negative</td>
+                    <td><input type="checkbox" name="rlKneestPositiveSL" value="rlKneestPositiveSL" /> Positive
+                    <input type="checkbox" name="rlKneestNegativeSL" value="rlKneestNegativeSL" /> Negative</td>
+                </tr>
+                <tr>
+                    <td>Patellar Tap Test</td>
+                    <td><input type="checkbox" name="rlKneestPositiveSR2" value="rlKneestPositiveSR2" /> Positive
+                    <input type="checkbox" name="rlKneestNegativeSR2" value="rlKneestNegativeSR2" /> Negative</td>
+                    <td><input type="checkbox" name="rlKneestPositiveSL2" value="rlKneestPositiveSL2" /> Positive
+                    <input type="checkbox" name="rlKneestNegativeSL2" value="rlKneestNegativeSL2" /> Negative</td>
+                </tr>
+            </table>
+
+            <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left; margin-top:20px;">
+                <tr>
+                    <td><input type="checkbox" name="GaitKnee" value="GaitKnee" /><u> Gait Analysis :</u> 
+                        <input type="checkbox" name="NormalKnee" value="NormalKnee" /> Normal Gait
+                        <input type="checkbox" name="AntalgicKnee" value="AntalgicKnee" /> Antalgic Gait  
+                        <input type="checkbox" name="LimpingKnee" value="LimpingKnee" /> Limping Gait
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="DecreaseKnee" value="DecreaseKnee" /> Decrease cadence
+                        <input type="checkbox" name="DecreaseStepKnee" value="DecreaseStepKnee" /> Decrease step length
+                    </td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Objective Findings /Problems list :</b></u></div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;margin-left:20px;">
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildKnee" value="MildKnee" /> Mild
+                        <input type="checkbox" name="ModerateKnee" value="ModerateKnee" /> Moderate
+                        <input type="checkbox" name="severemuscleKnee" value="severemuscleKnee" /> severe muscle spasm at the 
+                        <input type="checkbox" name="RightKneemusclesKnee" value="RightKneemusclesKnee" /> Right Knee muscles
+                        <input type="checkbox" name="LeftKneemusclesKnee" value="LeftKneemusclesKnee" /> Left Knee muscles
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildKnee2" value="MildKnee2" /> Mild
+                        <input type="checkbox" name="ModerateKnee2" value="ModerateKnee2" /> Moderate
+                        <input type="checkbox" name="severemuscleKnee2" value="severemuscleKnee2" /> severe Limited AROM at  
+                        <input type="checkbox" name="RightKneemusclesKnee2" value="RightKneemusclesKnee2" /> Right Knee joint 
+                        <input type="checkbox" name="LeftKneemusclesKnee2" value="LeftKneemusclesKnee2" /> Left Knee joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildKnee3" value="MildKnee3" /> Mild
+                        <input type="checkbox" name="ModerateKnee3" value="ModerateKnee3" /> Moderate
+                        <input type="checkbox" name="severemuscleKnee3" value="severemuscleKnee3" /> severe Restricted mobility at the   
+                        <input type="checkbox" name="RightKneemusclesKnee3" value="RightKneemusclesKnee3" /> Right Knee joint 
+                        <input type="checkbox" name="LeftKneemusclesKnee3" value="LeftKneemusclesKnee3" /> Left Knee joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildKnee5" value="MildKnee5" /> Mild
+                        <input type="checkbox" name="ModerateKnee5" value="ModerateKnee5" /> Moderate
+                        <input type="checkbox" name="severemuscleKnee5" value="severemuscleKnee5" /> severe Gait deviation
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildKnee4" value="MildKnee4" /> Mild
+                        <input type="checkbox" name="ModerateKnee4" value="ModerateKnee4" /> Moderate
+                        <input type="checkbox" name="severemuscleKnee4" value="severemuscleKnee4" /> severe Decreased functional activities.
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="color:red"><input type="checkbox" name="RightAnkle" value="RightAnkle" /> Right Ankle  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="LeftAnkle" value="LeftAnkle" /> Left Ankle</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Pain level (VAS): Right<input type="text" name="rightAnklePainlevel" value="" />/10 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Left<input type="text" name="leftAnklePainlevel" value="" />/10
+                        </div>
+                        <div>Goal (6-8 weeks): Decrease pain level to <input type="text" name="rlAnkleGoal" value="" />/10.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>AROM :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Ankle</td>
+                    <td colspan="1">Left Ankle</td>
+                    <td colspan="1">Normal</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Dorsi Flex</td>
+                    <td><input type="text" name="rlAnkleFlexPre" value="" /></td>
+                    <td><input type="text" name="rlAnkleFlexCurr" value="" /></td>
+                    <td>170-180</td>
+                    <td rowspan="6">Increase AROM by 10%</td>
+                </tr>
+                <tr>
+                    <td>Planter Ext</td>
+                    <td><input type="text" name="rlAnkleextPre" value="" /></td>
+                    <td><input type="text" name="rlAnkleextCurr" value="" /></td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Inversion</td>
+                    <td><input type="text" name="rlAnklerRotPre" value="" /></td>
+                    <td><input type="text" name="rlAnklerRotCurr" value="" /></td>
+                    <td>170-180</td>
+                </tr>
+                <tr>
+                    <td>Eversion</td>
+                    <td><input type="text" name="rlAnklelRotPre" value="" /></td>
+                    <td><input type="text" name="rlAnklelRotCurr" value="" /></td>
+                    <td>45</td>
+                </tr>
+                <!-- <tr>
+                    <td>ER</td>
+                    <td><input type="text" name="rlAnklersbPre" value="" /></td>
+                    <td><input type="text" name="rlAnklersbCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr>
+                <tr>
+                    <td>IR</td>
+                    <td><input type="text" name="rlAnklelsbPre" value="" /></td>
+                    <td><input type="text" name="rlAnklelsbCurr" value="" /></td>
+                    <td>80-90</td>
+                </tr> -->
+            </table>
+
+
+            <div style="margin:15px 0;"><u><b>Manual muscle test :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Movement</td>
+                    <td colspan="1">Right Ankle</td>
+                    <td colspan="1">Left Ankle</td>
+                    <td rowspan="1">Goal (6-8 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Dorsi Flex</td>
+                    <td><input type="text" name="rlAnkleFlexPreManual" value="" /></td>
+                    <td><input type="text" name="rlAnkleFlexCurrManual" value="" /></td>
+                    <td rowspan="6">Improve muscle strength by 1 grade</td>
+                </tr>
+                <tr>
+                    <td>Planter Ext</td>
+                    <td><input type="text" name="rlAnkleextPreManual" value="" /></td>
+                    <td><input type="text" name="rlAnkleextCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Inversion</td>
+                    <td><input type="text" name="rlAnklerRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlAnklerRotCurrManual" value="" /></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Eversion</td>
+                    <td><input type="text" name="rlAnklelRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlAnklelRotCurrManual" value="" /></td>
+                </tr>
+                <!-- <tr>
+                    <td>ER</td>
+                    <td><input type="text" name="rlAnkleeRotPreManual" value="" /></td>
+                    <td><input type="text" name="rlAnkleeRotCurrManual" value="" /></td>
+                </tr>
+                <tr>
+                    <td>IR</td>
+                     <td><input type="text" name="rlAnklersbPreManual" value="" /></td>
+                    <td><input type="text" name="rlAnklersbCurrManual" value="" /></td>
+                </tr> -->
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Special tests :</b></u></div>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+                <tr>
+                    <td rowspan="1">Test</td>
+                    <td colspan="1">Right Ankle Findings</td>
+                    <td colspan="1">Left Ankle Findings</td>
+                </tr>
+                <tr>
+                    <td>Talar Tilt Test</td>
+                    <td><input type="checkbox" name="rlAnklecdtPositiveR" value="rlAnklecdtPositiveR" /> Positive
+                    <input type="checkbox" name="rlAnklecdtNegativeR" value="rlAnklecdtNegativeR"/> Negative</td>
+                    <td><input type="checkbox" name="rlAnklecdtPositiveL" value="rlAnklecdtPositiveL" /> Positive
+                    <input type="checkbox" name="rlAnklecdtNegativeL" value="rlAnklecdtNegativeL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Inversion stress Test</td>
+                    <td><input type="checkbox" name="rlAnklecdtPositiveER" value="rlAnklecdtPositiveER" /> Positive
+                    <input type="checkbox" name="rlAnklecdtNegativeER" value="rlAnklecdtNegativeER"/> Negative</td>
+                    <td><input type="checkbox" name="rlAnklecdtPositiveEL" value="rlAnklecdtPositiveEL" /> Positive
+                    <input type="checkbox" name="rlAnklecdtNegativeEL" value="rlAnklecdtNegativeEL"/> Negative</td>
+                </tr>
+                <tr>
+                    <td>Eversion Stress Test</td>
+                    <td><input type="checkbox" name="rlAnklestPositiveSR" value="rlAnklestPositiveSR" /> Positive
+                    <input type="checkbox" name="rlAnklestNegativeSR" value="rlAnklestNegativeSR" /> Negative</td>
+                    <td><input type="checkbox" name="rlAnklestPositiveSL" value="rlAnklestPositiveSL" /> Positive
+                    <input type="checkbox" name="rlAnklestNegativeSL" value="rlAnklestNegativeSL" /> Negative</td>
+                </tr>
+                <tr>
+                    <td>Patellar Tap Test</td>
+                    <td><input type="checkbox" name="rlAnklestPositiveSR2" value="rlAnklestPositiveSR2" /> Positive
+                    <input type="checkbox" name="rlAnklestNegativeSR2" value="rlAnklestNegativeSR2" /> Negative</td>
+                    <td><input type="checkbox" name="rlAnklestPositiveSL2" value="rlAnklestPositiveSL2" /> Positive
+                    <input type="checkbox" name="rlAnklestNegativeSL2" value="rlAnklestNegativeSL2" /> Negative</td>
+                </tr>
+            </table>
+
+            <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;">
+                <tr>
+                    <td><input type="checkbox" name="GaitAnkle" value="GaitAnkle" /><u> Gait Analysis :</u> 
+                        <input type="checkbox" name="NormalAnkle" value="NormalAnkle" /> Normal Gait
+                        <input type="checkbox" name="AntalgicAnkle" value="AntalgicAnkle" /> Antalgic Gait  
+                        <input type="checkbox" name="LimpingAnkle" value="LimpingAnkle" /> Limping Gait
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="DecreaseAnkle" value="DecreaseAnkle" /> Decrease cadence
+                        <input type="checkbox" name="DecreaseStepAnkle" value="DecreaseStepAnkle" /> Decrease step length
+                    </td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Objective Findings /Problems list :</b></u></div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;">
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildAnkle" value="MildAnkle" /> Mild
+                        <input type="checkbox" name="ModerateAnkle" value="ModerateAnkle" /> Moderate
+                        <input type="checkbox" name="severemuscleAnkle" value="severemuscleAnkle" /> severe muscle spasm at the 
+                        <input type="checkbox" name="RightAnklemusclesAnkle" value="RightAnklemusclesAnkle" /> Right Ankle muscles
+                        <input type="checkbox" name="LeftAnklemusclesAnkle" value="LeftAnklemusclesAnkle" /> Left Ankle muscles
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildAnkle2" value="MildAnkle2" /> Mild
+                        <input type="checkbox" name="ModerateAnkle2" value="ModerateAnkle2" /> Moderate
+                        <input type="checkbox" name="severemuscleAnkle2" value="severemuscleAnkle2" /> severe Limited AROM at  
+                        <input type="checkbox" name="RightAnklemusclesAnkle2" value="RightAnklemusclesAnkle2" /> Right Ankle joint 
+                        <input type="checkbox" name="LeftAnklemusclesAnkle2" value="LeftAnklemusclesAnkle2" /> Left Ankle joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildAnkle3" value="MildAnkle3" /> Mild
+                        <input type="checkbox" name="ModerateAnkle3" value="ModerateAnkle3" /> Moderate
+                        <input type="checkbox" name="severemuscleAnkle3" value="severemuscleAnkle3" /> severe Restricted mobility at the   
+                        <input type="checkbox" name="RightAnklemusclesAnkle3" value="RightAnklemusclesAnkle3" /> Right Ankle joint 
+                        <input type="checkbox" name="LeftAnklemusclesAnkle3" value="LeftAnklemusclesAnkle3" /> Left Ankle joint 
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildAnkle5" value="MildAnkle5" /> Mild
+                        <input type="checkbox" name="ModerateAnkle5" value="ModerateAnkle5" /> Moderate
+                        <input type="checkbox" name="severemuscleAnkle5" value="severemuscleAnkle5" /> severe Gait deviation
+                    </td>
+                </tr>
+                <tr>
+                    <td>-
+                        <input type="checkbox" name="MildAnkle4" value="MildAnkle4" /> Mild
+                        <input type="checkbox" name="ModerateAnkle4" value="ModerateAnkle4" /> Moderate
+                        <input type="checkbox" name="severemuscleAnkle4" value="severemuscleAnkle4" /> severe Decreased functional activities.
+                    </td>
+                </tr>
+            </table>
+
+            
+            <div style="margin:15px 0;"><u><b>Diagnosis Codes :</b></u></div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+                <tr>
+                    <td><input type="checkbox" name="S13.4XXA" value="S13.4XXA" /> S13.4XXA</td>
+                    <td>Cervical Sprain/Strain</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S33.5XXA" value="S33.5XXA" /> S33.5XXA</td>
+                    <td>Lumbar Sprain/Strain</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S23.3XXA" value="S23.3XXA" /> S23.3XXA</td>
+                    <td>Thoracic Sprain/Strain</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M54.12" value="M54.12" /> M54.12</td>
+                    <td>Cervical Radiculopathy</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M54.16" value="M54.16" /> M54.16</td>
+                    <td>Lumbar Radiculopathy</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M47.814" value="M47.814" /> M47.814</td>
+                    <td>Thoracic Spondylosis</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S43.401A" value="S43.401A" /> S43.401A</td>
+                    <td>Shoulder Sprain R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S43.402A" value="S43.402A" /> S43.402A</td>
+                    <td>Shoulder Sprain L</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M24.819" value="M24.819" /> M24.819</td>
+                    <td>Shoulder derangement</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M75.41" value="M75.41" /> M75.41</td>
+                    <td>Impingement Shoulder R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S53.401A" value="S53.401A" /> S53.401A</td>
+                    <td>Sprain of Elbow R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S53.402A" value="S53.402A" /> S53.402A</td>
+                    <td>Sprain of Elbow L</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M24.83" value="M24.83" /> M24.83</td>
+                    <td>Wrist derangement</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S63.501A" value="S63.501A" /> S63.501A</td>
+                    <td>Sprain of Wrist/ Hand R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S63.502A" value="S63.502A" /> S63.502A</td>
+                    <td>Sprain of Wrist/ Hand L</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S63.609 S" value="S63.609 S" /> S63.609 S</td>
+                    <td>Sprain of thumb (L/R)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name=" G56.00	" value=" G56.00	" />  G56.00	</td>
+                    <td>CTS</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S73.101A" value="S73.101A" /> S73.101A</td>
+                    <td>Sprain of Hip R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S73.102A" value="S73.102A" /> S73.102A</td>
+                    <td>Sprain of Hip L</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M24.85" value="M24.85" /> M24.85</td>
+                    <td>Derangement of hip L/R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M23.90" value="M23.90" /> M23.90</td>
+                    <td>Knee derangement</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S83.91XA" value="S83.91XA" /> S83.91XA</td>
+                    <td>Knee Sprain R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S83.92XA" value="S83.92XA" /> S83.92XA</td>
+                    <td>Knee Sprain L</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M79.606" value="M79.606" /> M79.606</td>
+                    <td>Sprain in leg (L/R)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S93.401A" value="S93.401A" /> S93.401A</td>
+                    <td>Sprain of Ankle R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S93.402A" value="S93.402A" /> S93.402A</td>
+                    <td>Sprain of Ankle L</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="M24.873" value="M24.873" /> M24.873</td>
+                    <td>Ankle derangement L/R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S93.601S" value="S93.601S" /> S93.601S</td>
+                    <td>Sprain of Foot R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S93.602S" value="S93.602S" /> S93.602S</td>
+                    <td>Sprain of Foot L</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S93.501A" value="S93.501A" /> S93.501A</td>
+                    <td>Sprain of Toe R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="S93.502A" value="S93.502A" /> S93.502A</td>
+                    <td>Sprain of Toe L</td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Short Term Goals :</b></u>(6-8) weeks</div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+                <tr>
+                    <td><input type="checkbox" name="stg1" value="stg1" /> Decrease pain level by 10% to be able to perform dressing, bathing and combing hair without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg2" value="stg2" /> Increase muscle strength by 1 grade to be able to carry and lift moderate to heavy weights.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg3" value="stg3" /> Increase AROM 10 % to be able to perform reaching &nbsp;<input type="checkbox" name="stg4" value="stg4" />  and to be able to drive for more than 8 hours without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg5" value="stg5" /> Pt will be independent with HEP.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg6" value="stg6" />  <b>Patient safely performs the duties of his job with fewer restrictions, pain and limitations. For example, to be able to operate a motor vehicle safely without causing injuries to themselves, their passengers, and other vehicles.</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg7" value="stg7" /> Decrease pain level by 10% to be able to stand for 3 hours without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg8" value="stg8" /> Increase muscle strength by 1 grade to be able to get up and to transfer from the chair without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg9" value="stg9" /> Increase AROM 10 %to be able to negotiate and climb 30 stairs without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg10" value="stg10" /> Improve gait to decrease risk of fall and to be able to safely ambulate (8) block(s).
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg11" value="stg11" /> Pt will be independent with HEP.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="stg12" value="stg12" /> <b>Patient safely performs the duties of his job with fewer restrictions, pain and limitations. For example, to be able to operate a motor vehicle safely without causing injuries to themselves, their passengers, and other vehicles.</b>
+                    </td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Long Term Goals : </b></u>(12) weeks</div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+                <tr>
+                    <td><input type="checkbox" name="ltg1" value="ltg1" /> Decrease pain level to Zero/10 to be able to do overhead activities without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg2" value="ltg2" /> Increase muscle strength to 5/5 to be able to perform pulling, pushing and carrying moderate to heavy weights without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg3" value="ltg3" /> Increase AROM 100 % to be able to do lifting more than 40 pounds without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg5" value="ltg5" /> Pt will be able to perform HEP with 100% accuracy and independently.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg6" value="ltg6" />  <b>Improvement in ADL’s including [social, self-care, life- support activities, occupational/recreational activities and family/home responsibilities].</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg7" value="ltg7" /> Decrease pain level to   Zero/10 to be able to stand for 6 hours without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg8" value="ltg8" /> Increase muscle strength to 5/5 to be able to do full squat without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg9" value="ltg9" /> Increase AROM 100 % to be able to negotiate and climb 60 stairs without pain.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg10" value="ltg10" /> Improve gait to decrease risk of fall and to be able to safely ambulate for more than (12) block(s).
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg11" value="ltg11" /> Pt will be able to perform HEP with 100% accuracy and independently.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ltg12" value="ltg12" /> Improvement in ADL’s including [social, self-care, life- support activities, occupational/recreational activities and family/home responsibilities].
+                    </td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><b>Plan of Care : </b></div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+                <tr>
+                    <td><input type="checkbox" name="poc1" value="poc1" /> Hot/Cold Pack: To increase blood flow, decrease spasm and increase capillary permeability.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="poc2" value="poc2" /> Electrical stimulation (TENS/ Interferential): To relief pain, promote relaxation of the muscle spasm and to increase local blood circulation.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="poc3" value="poc3" /> Therapeutic Exercise; (Strengthening/Stretching/AROM/ PROM): To increase muscle strength and to improve functional mobility.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="poc5" value="poc5" /> Manual Therapy; (Jt Mobilization/ MFR/ STM): To relief pain and facilitate joint mobility and flexibility These techniques are applied to soft tissue as well as the joint for facilitation of fluid exchange, restoration of the joint movement and stretching of the shortened muscles.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="poc6" value="poc6" />  Therapeutic massage: To relief muscle spasm, increase lymphatic drainage and increase cutaneous circulation.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="poc7" value="poc7" /> Neuromuscular education: To improve coordination and performance of ADLs.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="poc8" value="poc8" /> Gait training: To decrease risk of fall and to be able to safely ambulate and negotiate the curbs and the stairs.
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="poc9" value="poc9" /> Home Exercise Program.
+                    </td>
+                </tr>
+                <tr>
+                    <td>The above modalities will be applied for the purpose of providing relief from acute post-traumatic pain. All parameters are set to the patient’s tolerance. 
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Frequency : 2-3 times a week for 6-8 weeks.</b></td>
+                </tr>
+            </table>
+
+            <div style="margin:15px 0;"><u><b>Discussion/ Recommendations : </b></u></div>
+
+            <div style="margin:15px 0;"><b>In my professional opinion based on the descriptions of the injury, the patient’s complaints and the current physical findings, the above recommendations are essential and medically necessary in order to stabilize and expedite recovery of the injuries.</b></div>
+
+            <div style="margin:15px 0;">he patient advised to avoid performing functional activities that causes additional stress and compression on the <input type="text" name="last1" id=""> and this includes, but is not limited to: moderate lifting [occupational or recreational], contact sports or any other type of action that would exert pressure or overexertion upon muscle and ligament tissues. The patient’s treatment plan is appropriate based on the examination. I am suggesting the patient comes in for a follow up in 6-8 weeks for a reevaluation. The patient was advised to start therapeutic home exercises and no heavy lifting greater than <input type="text" name="last2" id=""> pounds. 
+            <b> The patient understands and agrees with the treatment plan.</b></div>
+
+            <div style="margin:10px 0;"><b>Total visits from initial visit : <input type="text" name="last3" id=""> visit(s).</b></div>
+
+            <div style="margin-top:25px; margin-bottom:10px;">Sincerely,</div>
+
+            <div style="margin:10px 0;"><img src="signature.png" alt="" width="180px" height="60px"> </div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+                <tr>
+                    <td>Dr. Ahmed Soliman, DPT</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>Date : <input type="text" name="date" id=""> </td>
+                </tr>
+            </table>
+
+
+            <br>
+
             <br>
             <input type="submit" value="Create PDF" class="btn btn-primary">
         </form>
