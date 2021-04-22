@@ -3622,6 +3622,131 @@ $data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:
 </table>';
 //end Diagnosis Codes 
 
+//start Short Term Goals
+
+if(isset($_POST['stg1']) && $_POST['stg1'] == "stg1"){
+    $stg1 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg1 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg2']) && $_POST['stg2'] == "stg2"){
+    $stg2 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg2 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg3']) && $_POST['stg3'] == "stg3"){
+    $stg3 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg3 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg4']) && $_POST['stg4'] == "stg4"){
+    $stg4 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg4 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg5']) && $_POST['stg5'] == "stg5"){
+    $stg5 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg5 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg6']) && $_POST['stg6'] == "stg6"){
+    $stg6 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg6 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg7']) && $_POST['stg7'] == "stg7"){
+    $stg7 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg7 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg8']) && $_POST['stg8'] == "stg8"){
+    $stg8 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg8 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg9']) && $_POST['stg9'] == "stg9"){
+    $stg9 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg9 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg10']) && $_POST['stg10'] == "stg10"){
+    $stg10 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg10 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg11']) && $_POST['stg11'] == "stg11"){
+    $stg11 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg11 = '<input type="checkbox">';
+}
+
+if(isset($_POST['stg12']) && $_POST['stg12'] == "stg12"){
+    $stg12 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $stg12 = '<input type="checkbox">';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Short Term Goals :</b></u>(6-8) weeks</div>';
+
+$data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+    <tr>
+        <td>'.$stg1.' Decrease pain level by 10% to be able to perform dressing, bathing and combing hair without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg2.' Increase muscle strength by 1 grade to be able to carry and lift moderate to heavy weights.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg3.' Increase AROM 10 % to be able to perform reaching &nbsp;'.$stg4.'  and to be able to drive for more than 8 hours without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg5.' Pt will be independent with HEP.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg6.'  <b>Patient safely performs the duties of his job with fewer restrictions, pain and limitations. For example, to be able to operate a motor vehicle safely without causing injuries to themselves, their passengers, and other vehicles.</b>
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg7.' Decrease pain level by 10% to be able to stand for 3 hours without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg8.' Increase muscle strength by 1 grade to be able to get up and to transfer from the chair without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg9.' Increase AROM 10 %to be able to negotiate and climb 30 stairs without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg10.' Improve gait to decrease risk of fall and to be able to safely ambulate (8) block(s).
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg11.' Pt will be independent with HEP.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$stg12.' <b>Patient safely performs the duties of his job with fewer restrictions, pain and limitations. For example, to be able to operate a motor vehicle safely without causing injuries to themselves, their passengers, and other vehicles.</b>
+        </td>
+    </tr>
+</table>';
+//end Short Term Goals 
+
+
 
 
 
