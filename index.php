@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Targer | Initial Examination</title>
+    <title>Life Target | Initial Examination</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -1998,6 +1998,7 @@
             <div style="margin-top:25px; margin-bottom:10px;">Sincerely,</div>
 
             <div style="margin:10px 0;"><img src="signature.png" alt="" width="180px" height="60px"> </div>
+
             <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
                 <tr>
                     <td>Dr. Ahmed Soliman, DPT</td>
@@ -2008,11 +2009,8 @@
                 </tr>
             </table>
 
-
             <br>
-
-            <br>
-            <input type="submit" value="Create PDF" class="btn btn-primary">
+            <div class="center" style="margin-left:280px;"><input type="submit" value="Download as PDF" class="btn btn-primary"></div>
         </form>
 
     </div>

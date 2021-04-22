@@ -76,16 +76,9 @@ $data .= '<table width="100%" border="0" cellpadding="0" cellspacing="0">
         <td><b>Date of Accident:</b></td>
         <td>'.$p1_4.'</td>
     </tr>
-    <tr>
-        <td><b>Sex:</b></td>
-        <td colspan="0">
-            '.$sexM.'  '.$sexF.'
-        </td>
-    </tr>
-    <tr>
-        <td colspan="4">&nbsp;</td>
-    </tr>
 </table>';
+
+$data .= '<div><b>Sex:</b> '.$sexM.'  '.$sexF.' </div>';
 
 $data .= '<br>';
 $data .= '<u><b>Accident History :</b></u>'.'<br>';
@@ -1132,14 +1125,13 @@ $data .= '<table>
     <tr>
         <td style="color:red">'.$RightShoulder.''.$LeftShoulder.'</td>
     </tr>
-    <td>
-        <div>Pain level (VAS): Right '.$rightPainlevel.' 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Left '.$leftPainlevel.'
-        </div>
-        <div>Goal (6-8 weeks): Decrease pain level to '.$rlGoal.'
-        </div>
-    </td>
+
+    <tr>
+        <td>Pain level (VAS): Right '.$rightPainlevel.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Left '.$leftPainlevel.' </td>
+    </tr>
+    <tr>
+        <td>Goal (6-8 weeks): Decrease pain level to '.$rlGoal.'</td>
+    </tr>
 </table>';
 
 $data .= '<br>';
@@ -1476,14 +1468,12 @@ $data .= '<table>
     <tr>
         <td style="color:red">'.$RightElbow.''.$LeftElbow.'</td>
     </tr>
-    <td>
-        <div>Pain level (VAS): Right '.$rightElowPainlevel.' 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Left '.$leftElowPainlevel.'
-        </div>
-        <div>Goal (6-8 weeks): Decrease pain level to '.$rlElbowGoal.'
-        </div>
-    </td>
+    <tr>     
+        <td>Pain level (VAS): Right '.$rightElowPainlevel.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Left '.$leftElowPainlevel.' </td>
+    </tr>
+    <tr>
+        <td>Goal (6-8 weeks): Decrease pain level to '.$rlElbowGoal.' </td>
+    </tr>
 </table>';
 
 $data .= '<br>';
@@ -1795,14 +1785,12 @@ $data .= '<table>
     <tr>
         <td style="color:red">'.$RightWrist.''.$LeftWrist.'</td>
     </tr>
-    <td>
-        <div>Pain level (VAS): Right '.$rightWristPainlevel.' 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Left '.$leftWristPainlevel.'
-        </div>
-        <div>Goal (6-8 weeks): Decrease pain level to '.$rlWristGoal.'
-        </div>
-    </td>
+    <tr>
+        <td>Pain level (VAS): Right '.$rightWristPainlevel.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Left '.$leftWristPainlevel.' </td>
+    </tr>
+    <tr>
+        <td>Goal (6-8 weeks): Decrease pain level to '.$rlWristGoal.' </td>
+    </tr>
 </table>';
 
 $data .= '<br>';
@@ -2116,14 +2104,12 @@ $data .= '<table>
     <tr>
         <td style="color:red">'.$RightHip.''.$LeftHip.'</td>
     </tr>
-    <td>
-        <div>Pain level (VAS): Right '.$rightHipPainlevel.' 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Left '.$leftHipPainlevel.'
-        </div>
-        <div>Goal (6-8 weeks): Decrease pain level to '.$rlHipGoal.'
-        </div>
-    </td>
+    <tr>
+        <td>Pain level (VAS): Right '.$rightHipPainlevel.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Left '.$leftHipPainlevel.' </td>
+    </tr>
+    <tr>    
+        <td>Goal (6-8 weeks): Decrease pain level to '.$rlHipGoal.'</td>
+    </tr>
 </table>';
 
 $data .= '<br>';
@@ -2525,14 +2511,12 @@ $data .= '<table>
     <tr>
         <td style="color:red">'.$RightKnee.''.$LeftKnee.'</td>
     </tr>
-    <td>
-        <div>Pain level (VAS): Right '.$rightKneePainlevel.' 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Left '.$leftKneePainlevel.'
-        </div>
-        <div>Goal (6-8 weeks): Decrease pain level to '.$rlKneeGoal.'
-        </div>
-    </td>
+    <tr>
+        <td>Pain level (VAS): Right '.$rightKneePainlevel.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Left '.$leftKneePainlevel.' </td>
+    </tr>
+    <tr>
+        <td>Goal (6-8 weeks): Decrease pain level to '.$rlKneeGoal.'</td>
+    </tr>
 </table>';
 
 $data .= '<br>';
@@ -2915,14 +2899,12 @@ $data .= '<table>
     <tr>
         <td style="color:red">'.$RightAnkle.''.$LeftAnkle.'</td>
     </tr>
-    <td>
-        <div>Pain level (VAS): Right '.$rightAnklePainlevel.' 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Left '.$leftAnklePainlevel.'
-        </div>
-        <div>Goal (6-8 weeks): Decrease pain level to '.$rlAnkleGoal.'
-        </div>
-    </td>
+    <tr>
+        <td>Pain level (VAS): Right '.$rightAnklePainlevel.' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Left '.$leftAnklePainlevel.' </td>
+    </tr>
+    <tr>
+        <td>Goal (6-8 weeks): Decrease pain level to '.$rlAnkleGoal.' </td>
+    </tr>
 </table>';
 
 $data .= '<br>';
@@ -3863,15 +3845,157 @@ $data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:
     </tr>
 </table>';
 
+//start Plan of Care
 
+if(isset($_POST['poc1']) && $_POST['poc1'] == "poc1"){
+    $poc1 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $poc1 = '<input type="checkbox">';
+}
 
+if(isset($_POST['poc2']) && $_POST['poc2'] == "poc2"){
+    $poc2 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $poc2 = '<input type="checkbox">';
+}
 
+if(isset($_POST['poc3']) && $_POST['poc3'] == "poc3"){
+    $poc3 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $poc3 = '<input type="checkbox">';
+}
 
+if(isset($_POST['poc5']) && $_POST['poc5'] == "poc5"){
+    $poc5 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $poc5 = '<input type="checkbox">';
+}
 
+if(isset($_POST['poc6']) && $_POST['poc6'] == "poc6"){
+    $poc6 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $poc6 = '<input type="checkbox">';
+}
 
+if(isset($_POST['poc7']) && $_POST['poc7'] == "poc7"){
+    $poc7 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $poc7 = '<input type="checkbox">';
+}
 
-echo $data;
-die;
+if(isset($_POST['poc8']) && $_POST['poc8'] == "poc8"){
+    $poc8 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $poc8 = '<input type="checkbox">';
+}
+
+if(isset($_POST['poc9']) && $_POST['poc9'] == "poc9"){
+    $poc9 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $poc9 = '<input type="checkbox">';
+}
+
+$data .= '<div style="margin:15px 0;"><b>Plan of Care : </b></div>';
+
+$data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+    <tr>
+        <td>'.$poc1.' Hot/Cold Pack: To increase blood flow, decrease spasm and increase capillary permeability.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$poc2.' Electrical stimulation (TENS/ Interferential): To relief pain, promote relaxation of the muscle spasm and to increase local blood circulation.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$poc3.' Therapeutic Exercise; (Strengthening/Stretching/AROM/ PROM): To increase muscle strength and to improve functional mobility.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$poc5.' Manual Therapy; (Jt Mobilization/ MFR/ STM): To relief pain and facilitate joint mobility and flexibility These techniques are applied to soft tissue as well as the joint for facilitation of fluid exchange, restoration of the joint movement and stretching of the shortened muscles.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$poc6.'  Therapeutic massage: To relief muscle spasm, increase lymphatic drainage and increase cutaneous circulation.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$poc7.' Neuromuscular education: To improve coordination and performance of ADLs.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$poc8.' Gait training: To decrease risk of fall and to be able to safely ambulate and negotiate the curbs and the stairs.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$poc9.' Home Exercise Program.
+        </td>
+    </tr>
+    <tr>
+        <td>The above modalities will be applied for the purpose of providing relief from acute post-traumatic pain. All parameters are set to the patient’s tolerance. 
+        </td>
+    </tr>
+    <tr>
+        <td><b>Frequency : 2-3 times a week for 6-8 weeks.</b></td>
+    </tr>
+</table>';
+//End Plan of Care
+
+//Start Discussion/ Recommendations
+$data .= '<div style="margin:15px 0;"><u><b>Discussion/ Recommendations : </b></u></div>';
+
+$data .= '<div style="margin:15px 0;">
+    <b>In my professional opinion based on the descriptions of the injury, the patient’s complaints and the current physical findings, the above recommendations are essential and medically necessary in order to stabilize and expedite recovery of the injuries.</b>
+</div>';
+
+if(isset($_POST['last1']) && $_POST['last1']){
+    $last1= '<u><b> '.$_POST['last1'].'</b></u>';
+}else{
+    $last1= ' ____________ ';
+}
+
+if(isset($_POST['last2']) && $_POST['last2']){
+    $last2='<u><b> '.$_POST['last2'].'</b></u>';
+}else{
+    $last2= ' ____________ ';
+}
+
+if(isset($_POST['last3']) && $_POST['last3']){
+    $last3= '<u> '.$_POST['last3'].' </u>';
+}else{
+    $last3= ' ____________ ';
+}
+
+if(isset($_POST['date']) && $_POST['date']){
+    $date= '<u><b> '.$_POST['date'].'</b> </u>';
+}else{
+    $date= ' ____________ ';
+}
+
+$data .= '<div style="margin:15px 0;">
+    The patient advised to avoid performing functional activities that causes additional stress and compression on the '.$last1.' and this includes, but is not limited to: moderate lifting [occupational or recreational], contact sports or any other type of action that would exert pressure or overexertion upon muscle and ligament tissues. The patient’s treatment plan is appropriate based on the examination. I am suggesting the patient comes in for a follow up in 6-8 weeks for a reevaluation. The patient was advised to start therapeutic home exercises and no heavy lifting greater than '.$last2.' pounds. 
+    <b> The patient understands and agrees with the treatment plan.</b>
+</div>';
+
+$data .= '<div style="margin:10px 0;"><b>Total visits from initial visit : '.$last3.' visit(s).</b></div>';
+//End Discussion/ Recommendations
+
+//Finishing Part
+$data .= '<div style="margin-top:25px; margin-bottom:10px;">Sincerely,</div>';
+
+$data .= '<div style="margin:10px 0;"><img src="signature.png" alt="" width="180px" height="60px"> </div>';
+
+$data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+    <tr>
+        <td>Dr. Ahmed Soliman, DPT</td>
+
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        
+        <td>Date : '.$date.' </td>
+    </tr>
+</table>';
+
+// echo $data;
+// die;
 // $mpdf->SetFont('Arial','B',16);
 $mpdf->WriteHTML($data);
-$mpdf->Output('data.pdf', 'D');
+$mpdf->Output('Life_Target_Initial_Examination.pdf', 'D');
