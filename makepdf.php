@@ -3696,7 +3696,7 @@ if(isset($_POST['stg12']) && $_POST['stg12'] == "stg12"){
     $stg12 = '<input type="checkbox">';
 }
 
-$data .= '<div style="margin:15px 0;"><u><b>Short Term Goals :</b></u>(6-8) weeks</div>';
+$data .= '<div style="margin:15px 0;"><u><b>Short Term Goals :</b></u> (6-8) weeks</div>';
 
 $data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
     <tr>
@@ -3745,6 +3745,124 @@ $data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:
     </tr>
 </table>';
 //end Short Term Goals 
+
+//start Long Term Goals
+
+if(isset($_POST['ltg1']) && $_POST['ltg1'] == "ltg1"){
+    $ltg1 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg1 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg2']) && $_POST['ltg2'] == "ltg2"){
+    $ltg2 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg2 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg3']) && $_POST['ltg3'] == "ltg3"){
+    $ltg3 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg3 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg5']) && $_POST['ltg5'] == "ltg5"){
+    $ltg5 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg5 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg6']) && $_POST['ltg6'] == "ltg6"){
+    $ltg6 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg6 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg7']) && $_POST['ltg7'] == "ltg7"){
+    $ltg7 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg7 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg8']) && $_POST['ltg8'] == "ltg8"){
+    $ltg8 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg8 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg9']) && $_POST['ltg9'] == "ltg9"){
+    $ltg9 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg9 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg10']) && $_POST['ltg10'] == "ltg10"){
+    $ltg10 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg10 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg11']) && $_POST['ltg11'] == "ltg11"){
+    $ltg11 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg11 = '<input type="checkbox">';
+}
+
+if(isset($_POST['ltg12']) && $_POST['ltg12'] == "ltg12"){
+    $ltg12 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $ltg12 = '<input type="checkbox">';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Long Term Goals :</b></u> (12) weeks</div>';
+
+$data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+    <tr>
+        <td>'.$ltg1.' Decrease pain level to Zero/10 to be able to do overhead activities without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg2.' Increase muscle strength to 5/5 to be able to perform pulling, pushing and carrying moderate to heavy weights without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg3.' Increase AROM 100 % to be able to do lifting more than 40 pounds without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg5.' Pt will be able to perform HEP with 100% accuracy and independently.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg6.'  <b>Improvement in ADL’s including [social, self-care, life- support activities, occupational/recreational activities and family/home responsibilities].</b>
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg7.' Decrease pain level to   Zero/10 to be able to stand for 6 hours without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg8.' Increase muscle strength to 5/5 to be able to do full squat without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg9.' Increase AROM 100 % to be able to negotiate and climb 60 stairs without pain.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg10.' Improve gait to decrease risk of fall and to be able to safely ambulate for more than (12) block(s).
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg11.' Pt will be able to perform HEP with 100% accuracy and independently.
+        </td>
+    </tr>
+    <tr>
+        <td>'.$ltg12.' Improvement in ADL’s including [social, self-care, life- support activities, occupational/recreational activities and family/home responsibilities].
+        </td>
+    </tr>
+</table>';
+
 
 
 
