@@ -2882,6 +2882,429 @@ $data .= '<table width="100%" cellpadding="0" cellspacing="0" style="text-align:
     </tr>
 </table>';
 
+//right left Ankle start
+
+if(isset($_POST['RightAnkle']) && $_POST['RightAnkle'] == "RightAnkle"){
+    $RightAnkle = '<input type="checkbox" checked="checked" > Right Ankle ';
+}else{
+    $RightAnkle = '<input type="checkbox"> Right Ankle ';
+}
+if(isset($_POST['LeftAnkle']) && $_POST['LeftAnkle'] == "LeftAnkle"){
+    $LeftAnkle = '<input type="checkbox" checked="checked" > Left Ankle ';
+}else{
+    $LeftAnkle = '<input type="checkbox"> Left Ankle ';
+}
+
+if(isset($_POST['rightAnklePainlevel']) && $_POST['rightAnklePainlevel']){
+    $rightAnklePainlevel ='<u> '.$_POST['rightAnklePainlevel'].' </u>'.'/10';
+}else{
+    $rightAnklePainlevel = '____________'.'/10';
+}
+if(isset($_POST['leftAnklePainlevel']) && $_POST['leftAnklePainlevel']){
+    $leftAnklePainlevel = '<u> '.$_POST['leftAnklePainlevel'].' </u>'.'/10.';
+}else{
+    $leftAnklePainlevel = '____________'.'/10.';
+}
+if(isset($_POST['rlAnkleGoal']) && $_POST['rlAnkleGoal']){
+    $rlAnkleGoal = '<u> '.$_POST['rlAnkleGoal'].' </u>'.'/10.';
+}else{
+    $rlAnkleGoal = '____________'.'/10.';
+}
+$data .= '<br>';
+$data .= '<table>
+    <tr>
+        <td style="color:red">'.$RightAnkle.''.$LeftAnkle.'</td>
+    </tr>
+    <td>
+        <div>Pain level (VAS): Right '.$rightAnklePainlevel.' 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Left '.$leftAnklePainlevel.'
+        </div>
+        <div>Goal (6-8 weeks): Decrease pain level to '.$rlAnkleGoal.'
+        </div>
+    </td>
+</table>';
+
+$data .= '<br>';
+
+//start arom tests
+$data .= '<u><b>AROM :</b></u>';
+$data .= '<br>'.'<br>';
+$data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="1">Movement</td>
+        <td colspan="1">Right Ankle</td>
+        <td colspan="1">Left Ankle</td>
+        <td colspan="1">Normal</td>
+        <td rowspan="1">Goal (6-8 weeks)</td>
+    </tr> 
+    <tr>
+        <td>Dorsi Flex</td>
+        <td>'.$_POST['rlAnkleFlexPre'].'</td>
+        <td>'.$_POST['rlAnkleFlexCurr'].'</td>
+        <td>80-90</td>
+        <td rowspan="6">Increase AROM by 10%</td>
+    </tr>
+    <tr>
+        <td>Planter Ext</td>
+        <td>'.$_POST['rlAnkleextPre'].'</td>
+        <td>'.$_POST['rlAnkleextCurr'].'</td>
+        <td>70-80</td>
+    </tr>
+    <tr>
+        <td>Inversion</td>
+        <td>'.$_POST['rlAnklerRotPre'].'</td>
+        <td>'.$_POST['rlAnklerRotCurr'].'</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Eversion</td>
+        <td>'.$_POST['rlAnklelRotPre'].'</td>
+        <td>'.$_POST['rlAnklelRotCurr'].'</td>
+        <td>30</td>
+    </tr>
+</table>';
+//end arom tests
+
+$data .= '<br>';
+
+//start manual tests
+$data .= '<u><b>Manual muscle test :</b></u>';
+$data .= '<br>'.'<br>';
+
+$data.= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="1">Movement</td>
+        <td colspan="1">Right Ankle</td>
+        <td colspan="1">Left Ankle</td>
+        <td rowspan="1">Goal (6-8 weeks)</td>
+    </tr>
+    <tr>
+        <td>Dorsi Flex</td>
+        <td>'.$_POST['rlAnkleFlexPreManual'].'</td>
+        <td>'.$_POST['rlAnkleFlexCurrManual'].'</td>
+        <td rowspan="6">Improve muscle strength by 1 grade</td>
+    </tr>
+    <tr>
+        <td>Planter Ext</td>
+        <td>'.$_POST['rlAnkleextPreManual'].'</td>
+        <td>'.$_POST['rlAnkleextCurrManual'].'</td>
+    </tr>
+    <tr>
+        <td>Inversion</td>
+        <td>'.$_POST['rlAnklerRotPreManual'].'</td>
+        <td>'.$_POST['rlAnklerRotCurrManual'].'</td>
+    </tr>
+    <tr>
+        <td>Eversion</td>
+        <td>'.$_POST['rlAnklelRotPreManual'].'</td>
+        <td>'.$_POST['rlAnklelRotCurrManual'].'</td>
+    </tr>
+</table>';
+
+//end manual tests
+
+$data .= '<br>';
+
+//star Special tests
+if(isset($_POST['rlAnklecdtPositiveR']) && $_POST['rlAnklecdtPositiveR'] == "rlAnklecdtPositiveR"){
+    $rlAnklecdtPositiveR = '<input type="checkbox" checked="checked" > Positve ';
+}else{
+    $rlAnklecdtPositiveR = '<input type="checkbox"> Positve ';
+}
+if(isset($_POST['rlAnklecdtNegativeR']) && $_POST['rlAnklecdtNegativeR'] == "rlAnklecdtNegativeR"){
+    $rlAnklecdtNegativeR = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlAnklecdtNegativeR = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlAnklecdtPositiveL']) && $_POST['rlAnklecdtPositiveL'] == "rlAnklecdtPositiveL"){
+    $rlAnklecdtPositiveL = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlAnklecdtPositiveL = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlAnklecdtNegativeL']) && $_POST['rlAnklecdtNegativeL'] == "rlAnklecdtNegativeL"){
+    $rlAnklecdtNegativeL = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlAnklecdtNegativeL = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlAnklecdtPositiveER']) && $_POST['rlAnklecdtPositiveER'] == "rlAnklecdtPositiveER"){
+    $rlAnklecdtPositiveER = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlAnklecdtPositiveER = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlAnklecdtNegativeER']) && $_POST['rlAnklecdtNegativeER'] == "rlAnklecdtNegativeER"){
+    $rlAnklecdtNegativeER = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlAnklecdtNegativeER = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlAnklecdtPositiveEL']) && $_POST['rlAnklecdtPositiveEL'] == "rlAnklecdtPositiveEL"){
+    $rlAnklecdtPositiveEL = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlAnklecdtPositiveEL = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlAnklecdtNegativeEL']) && $_POST['rlAnklecdtNegativeEL'] == "rlAnklecdtNegativeEL"){
+    $rlAnklecdtNegativeEL = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlAnklecdtNegativeEL = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlAnklestPositiveSR']) && $_POST['rlAnklestPositiveSR'] == "rlAnklestPositiveSR"){
+    $rlAnklestPositiveSR = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlAnklestPositiveSR = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlAnklestNegativeSR']) && $_POST['rlAnklestNegativeSR'] == "rlAnklestNegativeSR"){
+    $rlAnklestNegativeSR = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlAnklestNegativeSR = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlAnklestPositiveSL']) && $_POST['rlAnklestPositiveSL'] == "rlAnklestPositiveSL"){
+    $rlAnklestPositiveSL = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlAnklestPositiveSL = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlAnklestNegativeSL']) && $_POST['rlAnklestNegativeSL'] == "rlAnklestNegativeSL"){
+    $rlAnklestNegativeSL = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlAnklestNegativeSL = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlAnklestPositiveSR2']) && $_POST['rlAnklestPositiveSR2'] == "rlAnklestPositiveSR2"){
+    $rlAnklestPositiveSR2 = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlAnklestPositiveSR2 = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlAnklestNegativeSR2']) && $_POST['rlAnklestNegativeSR2'] == "rlAnklestNegativeSR2"){
+    $rlAnklestNegativeSR2 = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlAnklestNegativeSR2 = '<input type="checkbox"> Negative ';
+}
+
+if(isset($_POST['rlAnklestPositiveSL2']) && $_POST['rlAnklestPositiveSL2'] == "rlAnklestPositiveSL2"){
+    $rlAnklestPositiveSL2 = '<input type="checkbox" checked="checked" > Positive ';
+}else{
+    $rlAnklestPositiveSL2 = '<input type="checkbox"> Positive ';
+}
+if(isset($_POST['rlAnklestNegativeSL2']) && $_POST['rlAnklestNegativeSL2'] == "rlAnklestNegativeSL2"){
+    $rlAnklestNegativeSL2 = '<input type="checkbox" checked="checked" > Negative ';
+}else{
+    $rlAnklestNegativeSL2 = '<input type="checkbox"> Negative ';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Special tests :</b></u></div>';
+$data .= '<table width="100%" border="1" cellpadding="0" cellspacing="0" style="text-align:center;">
+    <tr>
+        <td rowspan="1">Test</td>
+        <td colspan="1">Right Ankle Findings</td>
+        <td colspan="1">Left Ankle Findings</td>
+    </tr>
+    <tr>
+        <td>Talar Tilt Test</td>
+        <td>'.$rlAnklecdtPositiveR.' '.$rlAnklecdtNegativeR.'</td>
+        <td>'.$rlAnklecdtPositiveL.' '.$rlAnklecdtNegativeL.'</td>
+    </tr>
+    <tr>
+        <td>Inversion stress Test</td>
+        <td>'.$rlAnklecdtPositiveER.' '.$rlAnklecdtNegativeER.'</td>
+        <td>'.$rlAnklecdtPositiveEL.' '.$rlAnklecdtNegativeEL.'</td>
+    </tr>
+    <tr>
+        <td>Eversion Stress Test</td>
+        <td>'.$rlAnklestPositiveSR.' '.$rlAnklestNegativeSR.'</td>
+        <td>'.$rlAnklestPositiveSL.' '.$rlAnklestNegativeSL.'</td>
+    </tr>
+    <tr>
+        <td>Patellar Tap Test</td>
+        <td>'.$rlAnklestPositiveSR2.' '.$rlAnklestNegativeSR2.'</td>
+        <td>'.$rlAnklestPositiveSL2.' '.$rlAnklestNegativeSL2.'</td>
+    </tr>
+</table>';
+//end Special tests
+
+if(isset($_POST['GaitAnkle']) && $_POST['GaitAnkle'] == "GaitAnkle"){
+    $GaitAnkle = '<input type="checkbox" checked="checked" > <u> Gait Analysis :</u>  ';
+}else{
+    $GaitAnkle = '<input type="checkbox"> <u> Gait Analysis :</u>  ';
+}
+
+if(isset($_POST['NormalAnkle']) && $_POST['NormalAnkle'] == "NormalAnkle"){
+    $NormalAnkle = '<input type="checkbox" checked="checked" > Normal Gait  ';
+}else{
+    $NormalAnkle = '<input type="checkbox"> Normal Gait  ';
+}
+
+if(isset($_POST['AntalgicAnkle']) && $_POST['AntalgicAnkle'] == "AntalgicAnkle"){
+    $AntalgicAnkle = '<input type="checkbox" checked="checked" > Antalgic Gait  ';
+}else{
+    $AntalgicAnkle = '<input type="checkbox"> Antalgic Gait  ';
+}
+
+if(isset($_POST['LimpingAnkle']) && $_POST['LimpingAnkle'] == "LimpingAnkle"){
+    $LimpingAnkle = '<input type="checkbox" checked="checked" > Limping Gait ';
+}else{
+    $LimpingAnkle = '<input type="checkbox"> Limping Gait ';
+}
+
+if(isset($_POST['DecreaseAnkle']) && $_POST['DecreaseAnkle'] == "DecreaseAnkle"){
+    $DecreaseAnkle = '<input type="checkbox" checked="checked" > Decrease cadence ';
+}else{
+    $DecreaseAnkle = '<input type="checkbox"> Decrease cadence ';
+}
+
+if(isset($_POST['DecreaseStepAnkle']) && $_POST['DecreaseStepAnkle'] == "DecreaseStepAnkle"){
+    $DecreaseStepAnkle = '<input type="checkbox" checked="checked" > Decrease step length ';
+}else{
+    $DecreaseStepAnkle = '<input type="checkbox"> Decrease step length ';
+}
+
+$data .= '<table width="100%" cellpadding="0" cellspacing="0"   style="text-align:left; margin-top:20px;">
+    <tr>
+        <td>'.$GaitAnkle.' '.$NormalAnkle.''.$AntalgicAnkle.' '.$LimpingAnkle.'</td>
+    </tr>
+    <tr>
+        <td>'.$DecreaseAnkle.' '.$DecreaseStepAnkle.'</td>
+    </tr>
+</table>';
+
+//Objective Findings /Problems list :
+
+if(isset($_POST['MildAnkle']) && $_POST['MildAnkle'] == "MildAnkle"){
+    $MildAnkle = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $MildAnkle = '<input type="checkbox"> Mild ';
+}
+if(isset($_POST['MildAnkle2']) && $_POST['MildAnkle2'] == "MildAnkle2"){
+    $MildAnkle2 = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $MildAnkle2 = '<input type="checkbox"> Mild ';
+}
+if(isset($_POST['MildAnkle3']) && $_POST['MildAnkle3'] == "MildAnkle3"){
+    $MildAnkle3 = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $MildAnkle3 = '<input type="checkbox"> Mild ';
+}
+if(isset($_POST['MildAnkle4']) && $_POST['MildAnkle4'] == "MildAnkle4"){
+    $MildAnkle4 = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $MildAnkle4 = '<input type="checkbox"> Mild ';
+}
+if(isset($_POST['MildAnkle5']) && $_POST['MildAnkle5'] == "MildAnkle5"){
+    $MildAnkle5 = '<input type="checkbox" checked="checked" > Mild ';
+}else{
+    $MildAnkle5 = '<input type="checkbox"> Mild ';
+}
+
+if(isset($_POST['ModerateAnkle']) && $_POST['ModerateAnkle'] == "ModerateAnkle"){
+    $ModerateAnkle = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $ModerateAnkle = '<input type="checkbox"> Moderate ';
+}
+if(isset($_POST['ModerateAnkle2']) && $_POST['ModerateAnkle2'] == "ModerateAnkle2"){
+    $ModerateAnkle2 = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $ModerateAnkle2 = '<input type="checkbox"> Moderate ';
+}
+if(isset($_POST['ModerateAnkle3']) && $_POST['ModerateAnkle3'] == "ModerateAnkle3"){
+    $ModerateAnkle3 = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $ModerateAnkle3 = '<input type="checkbox"> Moderate ';
+}
+if(isset($_POST['ModerateAnkle4']) && $_POST['ModerateAnkle4'] == "ModerateAnkle4"){
+    $ModerateAnkle4 = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $ModerateAnkle4 = '<input type="checkbox"> Moderate ';
+}
+if(isset($_POST['ModerateAnkle5']) && $_POST['ModerateAnkle5'] == "ModerateAnkle5"){
+    $ModerateAnkle5 = '<input type="checkbox" checked="checked" > Moderate ';
+}else{
+    $ModerateAnkle5 = '<input type="checkbox"> Moderate ';
+}
+
+if(isset($_POST['severemuscleAnkle']) && $_POST['severemuscleAnkle'] == "severemuscleAnkle"){
+    $severemuscleAnkle = '<input type="checkbox" checked="checked" > severe muscle spasm at the ';
+}else{
+    $severemuscleAnkle = '<input type="checkbox"> severe muscle spasm at the ';
+}
+if(isset($_POST['severemuscleAnkle2']) && $_POST['severemuscleAnkle2'] == "severemuscleAnkle2"){
+    $severemuscleAnkle2 = '<input type="checkbox" checked="checked" > severe Limited AROM at ';
+}else{
+    $severemuscleAnkle2 = '<input type="checkbox"> severe Limited AROM at ';
+}
+if(isset($_POST['severemuscleAnkle3']) && $_POST['severemuscleAnkle3'] == "severemuscleAnkle3"){
+    $severemuscleAnkle3 = '<input type="checkbox" checked="checked" > severe Restricted mobility at the ';
+}else{
+    $severemuscleAnkle3 = '<input type="checkbox"> severe Restricted mobility at the ';
+}
+if(isset($_POST['severemuscleAnkle4']) && $_POST['severemuscleAnkle4'] == "severemuscleAnkle4"){
+    $severemuscleAnkle4 = '<input type="checkbox" checked="checked" > severe Decreased functional activities. ';
+}else{
+    $severemuscleAnkle4 = '<input type="checkbox"> severe Decreased functional activities. ';
+}
+if(isset($_POST['severemuscleAnkle5']) && $_POST['severemuscleAnkle5'] == "severemuscleAnkle5"){
+    $severemuscleAnkle5 = '<input type="checkbox" checked="checked" > severe Decreased functional activities. ';
+}else{
+    $severemuscleAnkle5 = '<input type="checkbox"> severe Decreased functional activities. ';
+}
+
+if(isset($_POST['RightAnklemusclesAnkle']) && $_POST['RightAnklemusclesAnkle'] == "RightAnklemusclesAnkle"){
+    $RightAnklemusclesAnkle = '<input type="checkbox" checked="checked" > Right Ankle muscles ';
+}else{
+    $RightAnklemusclesAnkle = '<input type="checkbox"> Right Ankle muscles ';
+}
+if(isset($_POST['RightAnklemusclesAnkle2']) && $_POST['RightAnklemusclesAnkle2'] == "RightAnklemusclesAnkle2"){
+    $RightAnklemusclesAnkle2 = '<input type="checkbox" checked="checked" > Right Ankle joint ';
+}else{
+    $RightAnklemusclesAnkle2 = '<input type="checkbox"> Right Ankle joint ';
+}
+if(isset($_POST['RightAnklemusclesAnkle3']) && $_POST['RightAnklemusclesAnkle3'] == "RightAnklemusclesAnkle3"){
+    $RightAnklemusclesAnkle3 = '<input type="checkbox" checked="checked" > Right Ankle joint ';
+}else{
+    $RightAnklemusclesAnkle3 = '<input type="checkbox"> Right Ankle joint. ';
+}
+
+if(isset($_POST['LeftAnklemusclesAnkle']) && $_POST['LeftAnklemusclesAnkle'] == "LeftAnklemusclesAnkle"){
+    $LeftAnklemusclesAnkle = '<input type="checkbox" checked="checked" > Left Ankle muscles ';
+}else{
+    $LeftAnklemusclesAnkle = '<input type="checkbox"> Left Ankle muscles ';
+}
+if(isset($_POST['LeftAnklemusclesAnkle2']) && $_POST['LeftAnklemusclesAnkle2'] == "LeftAnklemusclesAnkle2"){
+    $LeftAnklemusclesAnkle2 = '<input type="checkbox" checked="checked" > Left Ankle joint ';
+}else{
+    $LeftAnklemusclesAnkle2 = '<input type="checkbox"> Left Ankle joint ';
+}
+if(isset($_POST['LeftAnklemusclesAnkle3']) && $_POST['LeftAnklemusclesAnkle3'] == "LeftAnklemusclesAnkle3"){
+    $LeftAnklemusclesAnkle3 = '<input type="checkbox" checked="checked" > Left Ankle joint ';
+}else{
+    $LeftAnklemusclesAnkle3 = '<input type="checkbox"> Left Ankle joint. ';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Objective Findings /Problems list :</b></u></div>';
+$data .= '<table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;margin-left:20px;">
+    <tr>
+        <td> - '.$MildAnkle.''.$ModerateAnkle.''.$severemuscleAnkle.''.$RightAnklemusclesAnkle.''.$LeftAnklemusclesAnkle.'</td>
+    </tr>
+    <tr>
+        <td> - '.$MildAnkle2.''.$ModerateAnkle2.''.$severemuscleAnkle2.''.$RightAnklemusclesAnkle2.''.$LeftAnklemusclesAnkle2.'</td>
+    </tr>
+    <tr>
+        <td> - '.$MildAnkle3.''.$ModerateAnkle3.''.$severemuscleAnkle3.''.$RightAnklemusclesAnkle3.''.$LeftAnklemusclesAnkle3.'</td>
+    </tr>
+    <tr>
+        <td> - '.$MildAnkle5.''.$ModerateAnkle5.''.$severemuscleAnkle5.'</td>
+    </tr>
+    <tr>
+        <td> - '.$MildAnkle4.''.$ModerateAnkle4.''.$severemuscleAnkle4.'</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>';
+
+
 
 echo $data;
 die;

@@ -1652,6 +1652,7 @@
                     <input type="checkbox" name="rlAnklestNegativeSL2" value="rlAnklestNegativeSL2" /> Negative</td>
                 </tr>
             </table>
+            <br>
 
             <table width="100%" cellpadding="0" cellspacing="0" style="text-align:left;">
                 <tr>
@@ -1983,10 +1984,14 @@
 
             <div style="margin:15px 0;"><u><b>Discussion/ Recommendations : </b></u></div>
 
-            <div style="margin:15px 0;"><b>In my professional opinion based on the descriptions of the injury, the patient’s complaints and the current physical findings, the above recommendations are essential and medically necessary in order to stabilize and expedite recovery of the injuries.</b></div>
+            <div style="margin:15px 0;">
+                <b>In my professional opinion based on the descriptions of the injury, the patient’s complaints and the current physical findings, the above recommendations are essential and medically necessary in order to stabilize and expedite recovery of the injuries.</b>
+            </div>
 
-            <div style="margin:15px 0;">he patient advised to avoid performing functional activities that causes additional stress and compression on the <input type="text" name="last1" id=""> and this includes, but is not limited to: moderate lifting [occupational or recreational], contact sports or any other type of action that would exert pressure or overexertion upon muscle and ligament tissues. The patient’s treatment plan is appropriate based on the examination. I am suggesting the patient comes in for a follow up in 6-8 weeks for a reevaluation. The patient was advised to start therapeutic home exercises and no heavy lifting greater than <input type="text" name="last2" id=""> pounds. 
-            <b> The patient understands and agrees with the treatment plan.</b></div>
+            <div style="margin:15px 0;">
+                The patient advised to avoid performing functional activities that causes additional stress and compression on the <input type="text" name="last1" id=""> and this includes, but is not limited to: moderate lifting [occupational or recreational], contact sports or any other type of action that would exert pressure or overexertion upon muscle and ligament tissues. The patient’s treatment plan is appropriate based on the examination. I am suggesting the patient comes in for a follow up in 6-8 weeks for a reevaluation. The patient was advised to start therapeutic home exercises and no heavy lifting greater than <input type="text" name="last2" id=""> pounds. 
+                <b> The patient understands and agrees with the treatment plan.</b>
+            </div>
 
             <div style="margin:10px 0;"><b>Total visits from initial visit : <input type="text" name="last3" id=""> visit(s).</b></div>
 
@@ -1996,7 +2001,9 @@
             <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
                 <tr>
                     <td>Dr. Ahmed Soliman, DPT</td>
+
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    
                     <td>Date : <input type="text" name="date" id=""> </td>
                 </tr>
             </table>
