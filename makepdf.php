@@ -3303,6 +3303,327 @@ $data .= '<table width="100%" cellpadding="0" cellspacing="0" style="text-align:
         <td>&nbsp;</td>
     </tr>
 </table>';
+//end Objective Findings /Problems list :
+
+//start Diagnosis Codes
+if(isset($_POST['S134XXA']) && $_POST['S134XXA'] == "S134XXA"){
+    $S134XXA = '<input type="checkbox" checked="checked" >';
+}else{
+    $S134XXA = '<input type="checkbox">';
+}
+
+if(isset($_POST['S335XXA']) && $_POST['S335XXA'] == "S335XXA"){
+    $S335XXA = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S335XXA = '<input type="checkbox"> ';
+}
+
+if(isset($_POST['S233XXA']) && $_POST['S233XXA'] == "S233XXA"){
+    $S233XXA = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S233XXA = '<input type="checkbox"> ';
+}
+
+if(isset($_POST['M5412']) && $_POST['M5412'] == "M5412"){
+    $M5412 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M5412 = '<input type="checkbox">';
+}
+
+if(isset($_POST['M5416']) && $_POST['M5416'] == "M5416"){
+    $M5416 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M5416 = '<input type="checkbox">';
+}
+
+if(isset($_POST['M47814']) && $_POST['M47814'] == "M47814"){
+    $M47814 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M47814 = '<input type="checkbox">';
+}
+
+if(isset($_POST['S43401A']) && $_POST['S43401A'] == "S43401A"){
+    $S43401A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S43401A = '<input type="checkbox">';
+}
+
+if(isset($_POST['S43402A']) && $_POST['S43402A'] == "S43402A"){
+    $S43402A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S43402A = '<input type="checkbox">';
+}
+
+if(isset($_POST['M24819']) && $_POST['M24819'] == "M24819"){
+    $M24819 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M24819 = '<input type="checkbox">';
+}
+
+if(isset($_POST['M7541']) && $_POST['M7541'] == "M7541"){
+    $M7541 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M7541 = '<input type="checkbox">';
+}
+
+if(isset($_POST['S53401A']) && $_POST['S53401A'] == "S53401A"){
+    $S53401A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S53401A = '<input type="checkbox">';
+}
+
+if(isset($_POST['S53402A']) && $_POST['S53402A'] == "S53402A"){
+    $S53402A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S53402A = '<input type="checkbox">';
+}
+
+if(isset($_POST['M2483']) && $_POST['M2483'] == "M2483"){
+    $M2483 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M2483 = '<input type="checkbox">';
+}
+
+if(isset($_POST['S63501A']) && $_POST['S63501A'] == "S63501A"){
+    $S63501A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S63501A = '<input type="checkbox">';
+}
+
+if(isset($_POST['S63502A']) && $_POST['S63502A'] == "S63502A"){
+    $S63502A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S63502A = '<input type="checkbox">';
+}
+
+if(isset($_POST['S63609S']) && $_POST['S63609S'] == "S63609S"){
+    $S63609S = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S63609S = '<input type="checkbox">';
+}
+
+if(isset($_POST['G5600']) && $_POST['G5600'] == "G5600"){
+    $G5600 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $G5600 = '<input type="checkbox">';
+}
+
+if(isset($_POST['S73101A']) && $_POST['S73101A'] == "S73101A"){
+    $S73101A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S73101A = '<input type="checkbox">';
+}
+
+if(isset($_POST['S73102A']) && $_POST['S73102A'] == "S73102A"){
+    $S73102A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S73102A = '<input type="checkbox">';
+}
+
+if(isset($_POST['M2485']) && $_POST['M2485'] == "M2485"){
+    $M2485 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M2485 = '<input type="checkbox">';
+}
+
+if(isset($_POST['M2390']) && $_POST['M2390'] == "M2390"){
+    $M2390 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M2390 = '<input type="checkbox">';
+}
+
+if(isset($_POST['S8391XA']) && $_POST['S8391XA'] == "S8391XA"){
+    $S8391XA = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S8391XA = '<input type="checkbox">';
+}
+
+if(isset($_POST['S8392XA']) && $_POST['S8392XA'] == "S8392XA"){
+    $S8392XA = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S8392XA = '<input type="checkbox">';
+}
+
+if(isset($_POST['M79606']) && $_POST['M79606'] == "M79606"){
+    $M79606 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M79606 = '<input type="checkbox">';
+}
+
+if(isset($_POST['S93401A']) && $_POST['S93401A'] == "S93401A"){
+    $S93401A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S93401A = '<input type="checkbox">';
+}
+
+if(isset($_POST['S93402A']) && $_POST['S93402A'] == "S93402A"){
+    $S93402A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S93402A = '<input type="checkbox">';
+}
+
+if(isset($_POST['M24873']) && $_POST['M24873'] == "M24873"){
+    $M24873 = '<input type="checkbox" checked="checked" > ';
+}else{
+    $M24873 = '<input type="checkbox">';
+}
+
+if(isset($_POST['S93601S']) && $_POST['S93601S'] == "S93601S"){
+    $S93601S = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S93601S = '<input type="checkbox">';
+}
+
+if(isset($_POST['S93602S']) && $_POST['S93602S'] == "S93602S"){
+    $S93602S = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S93602S = '<input type="checkbox">';
+}
+
+if(isset($_POST['S93501A']) && $_POST['S93501A'] == "S93501A"){
+    $S93501A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S93501A = '<input type="checkbox">';
+}
+
+if(isset($_POST['S93502A']) && $_POST['S93502A'] == "S93502A"){
+    $S93502A = '<input type="checkbox" checked="checked" > ';
+}else{
+    $S93502A = '<input type="checkbox">';
+}
+
+$data .= '<div style="margin:15px 0;"><u><b>Diagnosis Codes :</b></u></div>';
+
+$data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
+    <tr>
+        <td>'.$S134XXA.' S13.4XXA</td>
+        <td>Cervical Sprain/Strain</td>
+    </tr>
+    <tr>
+        <td>'.$S335XXA.' S33.5XXA</td>
+        <td>Lumbar Sprain/Strain</td>
+    </tr>
+    <tr>
+        <td>'.$S233XXA.' S23.3XXA</td>
+        <td>Thoracic Sprain/Strain</td>
+    </tr>
+    <tr>
+        <td>'.$M5412.' M54.12</td>
+        <td>Cervical Radiculopathy</td>
+    </tr>
+    <tr>
+        <td>'.$M5416.' M54.16</td>
+        <td>Lumbar Radiculopathy</td>
+    </tr>
+    <tr>
+        <td>'.$M47814.' M47.814</td>
+        <td>Thoracic Spondylosis</td>
+    </tr>
+    <tr>
+        <td>'.$S43401A.' S43.401A</td>
+        <td>Shoulder Sprain R</td>
+    </tr>
+    <tr>
+        <td>'.$S43402A.' S43.402A</td>
+        <td>Shoulder Sprain L</td>
+    </tr>
+    <tr>
+        <td>'.$M24819.' M24.819</td>
+        <td>Shoulder derangement</td>
+    </tr>
+    <tr>
+        <td>'.$M7541.' M75.41</td>
+        <td>Impingement Shoulder R</td>
+    </tr>
+    <tr>
+        <td>'.$S53401A.' S53.401A</td>
+        <td>Sprain of Elbow R</td>
+    </tr>
+    <tr>
+        <td>'.$S53402A.' S53.402A</td>
+        <td>Sprain of Elbow L</td>
+    </tr>
+    <tr>
+        <td>'.$M2483.' M24.83</td>
+        <td>Wrist derangement</td>
+    </tr>
+    <tr>
+        <td>'.$S63501A.' S63.501A</td>
+        <td>Sprain of Wrist/ Hand R</td>
+    </tr>
+    <tr>
+        <td>'.$S63502A.' S63.502A</td>
+        <td>Sprain of Wrist/ Hand L</td>
+    </tr>
+    <tr>
+        <td>'.$S63609S.' S63.609 S</td>
+        <td>Sprain of thumb (L/R)</td>
+    </tr>
+    <tr>
+        <td>'.$G5600.'  G56.00	</td>
+        <td>CTS</td>
+    </tr>
+    <tr>
+        <td>'.$S73101A.' S73.101A</td>
+        <td>Sprain of Hip R</td>
+    </tr>
+    <tr>
+        <td>'.$S73102A.' S73.102A</td>
+        <td>Sprain of Hip L</td>
+    </tr>
+    <tr>
+        <td>'.$M2485.' M24.85</td>
+        <td>Derangement of hip L/R</td>
+    </tr>
+    <tr>
+        <td>'.$M2390.' M23.90</td>
+        <td>Knee derangement</td>
+    </tr>
+    <tr>
+        <td>'.$S8391XA.' S83.91XA</td>
+        <td>Knee Sprain R</td>
+    </tr>
+    <tr>
+        <td>'.$S8392XA.' S83.92XA</td>
+        <td>Knee Sprain L</td>
+    </tr>
+    <tr>
+        <td>'.$M79606.' M79.606</td>
+        <td>Sprain in leg (L/R)</td>
+    </tr>
+    <tr>
+        <td>'.$S93401A.' S93.401A</td>
+        <td>Sprain of Ankle R</td>
+    </tr>
+    <tr>
+        <td>'.$S93402A.' S93.402A</td>
+        <td>Sprain of Ankle L</td>
+    </tr>
+    <tr>
+        <td>'.$M24873.' M24.873</td>
+        <td>Ankle derangement L/R</td>
+    </tr>
+    <tr>
+        <td>'.$S93601S.' S93.601S</td>
+        <td>Sprain of Foot R</td>
+    </tr>
+    <tr>
+        <td>'.$S93602S.' S93.602S</td>
+        <td>Sprain of Foot L</td>
+    </tr>
+    <tr>
+        <td>'.$S93501A.' S93.501A</td>
+        <td>Sprain of Toe R</td>
+    </tr>
+    <tr>
+        <td>'.$S93502A.' S93.502A</td>
+        <td>Sprain of Toe L</td>
+    </tr>
+</table>';
+//end Diagnosis Codes 
+
+
+
 
 
 

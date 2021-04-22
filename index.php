@@ -1718,127 +1718,127 @@
             <div style="margin:15px 0;"><u><b>Diagnosis Codes :</b></u></div>
             <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0px;">
                 <tr>
-                    <td><input type="checkbox" name="S13.4XXA" value="S13.4XXA" /> S13.4XXA</td>
+                    <td><input type="checkbox" name="S134XXA" value="S134XXA" /> S13.4XXA</td>
                     <td>Cervical Sprain/Strain</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S33.5XXA" value="S33.5XXA" /> S33.5XXA</td>
+                    <td><input type="checkbox" name="S335XXA" value="S335XXA" /> S33.5XXA</td>
                     <td>Lumbar Sprain/Strain</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S23.3XXA" value="S23.3XXA" /> S23.3XXA</td>
+                    <td><input type="checkbox" name="S233XXA" value="S233XXA" /> S23.3XXA</td>
                     <td>Thoracic Sprain/Strain</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M54.12" value="M54.12" /> M54.12</td>
+                    <td><input type="checkbox" name="M5412" value="M5412" /> M54.12</td>
                     <td>Cervical Radiculopathy</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M54.16" value="M54.16" /> M54.16</td>
+                    <td><input type="checkbox" name="M5416" value="M5416" /> M54.16</td>
                     <td>Lumbar Radiculopathy</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M47.814" value="M47.814" /> M47.814</td>
+                    <td><input type="checkbox" name="M47814" value="M47814" /> M47.814</td>
                     <td>Thoracic Spondylosis</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S43.401A" value="S43.401A" /> S43.401A</td>
+                    <td><input type="checkbox" name="S43401A" value="S43401A" /> S43.401A</td>
                     <td>Shoulder Sprain R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S43.402A" value="S43.402A" /> S43.402A</td>
+                    <td><input type="checkbox" name="S43402A" value="S43402A" /> S43.402A</td>
                     <td>Shoulder Sprain L</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M24.819" value="M24.819" /> M24.819</td>
+                    <td><input type="checkbox" name="M24819" value="M24819" /> M24.819</td>
                     <td>Shoulder derangement</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M75.41" value="M75.41" /> M75.41</td>
+                    <td><input type="checkbox" name="M7541" value="M7541" /> M75.41</td>
                     <td>Impingement Shoulder R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S53.401A" value="S53.401A" /> S53.401A</td>
+                    <td><input type="checkbox" name="S53401A" value="S53401A" /> S53.401A</td>
                     <td>Sprain of Elbow R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S53.402A" value="S53.402A" /> S53.402A</td>
+                    <td><input type="checkbox" name="S53402A" value="S53402A" /> S53.402A</td>
                     <td>Sprain of Elbow L</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M24.83" value="M24.83" /> M24.83</td>
+                    <td><input type="checkbox" name="M2483" value="M2483" /> M24.83</td>
                     <td>Wrist derangement</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S63.501A" value="S63.501A" /> S63.501A</td>
+                    <td><input type="checkbox" name="S63501A" value="S63501A" /> S63.501A</td>
                     <td>Sprain of Wrist/ Hand R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S63.502A" value="S63.502A" /> S63.502A</td>
+                    <td><input type="checkbox" name="S63502A" value="S63502A" /> S63.502A</td>
                     <td>Sprain of Wrist/ Hand L</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S63.609 S" value="S63.609 S" /> S63.609 S</td>
+                    <td><input type="checkbox" name="S63609S" value="S63609S" /> S63.609 S</td>
                     <td>Sprain of thumb (L/R)</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name=" G56.00	" value=" G56.00	" />  G56.00	</td>
+                    <td><input type="checkbox" name="G5600" value="G5600" />  G56.00	</td>
                     <td>CTS</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S73.101A" value="S73.101A" /> S73.101A</td>
+                    <td><input type="checkbox" name="S73101A" value="S73101A" /> S73.101A</td>
                     <td>Sprain of Hip R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S73.102A" value="S73.102A" /> S73.102A</td>
+                    <td><input type="checkbox" name="S73102A" value="S73102A" /> S73.102A</td>
                     <td>Sprain of Hip L</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M24.85" value="M24.85" /> M24.85</td>
+                    <td><input type="checkbox" name="M2485" value="M2485" /> M24.85</td>
                     <td>Derangement of hip L/R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M23.90" value="M23.90" /> M23.90</td>
+                    <td><input type="checkbox" name="M2390" value="M2390" /> M23.90</td>
                     <td>Knee derangement</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S83.91XA" value="S83.91XA" /> S83.91XA</td>
+                    <td><input type="checkbox" name="S8391XA" value="S8391XA" /> S83.91XA</td>
                     <td>Knee Sprain R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S83.92XA" value="S83.92XA" /> S83.92XA</td>
+                    <td><input type="checkbox" name="S8392XA" value="S8392XA" /> S83.92XA</td>
                     <td>Knee Sprain L</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M79.606" value="M79.606" /> M79.606</td>
+                    <td><input type="checkbox" name="M79606" value="M79606" /> M79.606</td>
                     <td>Sprain in leg (L/R)</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S93.401A" value="S93.401A" /> S93.401A</td>
+                    <td><input type="checkbox" name="S93401A" value="S93401A" /> S93.401A</td>
                     <td>Sprain of Ankle R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S93.402A" value="S93.402A" /> S93.402A</td>
+                    <td><input type="checkbox" name="S93402A" value="S93402A" /> S93.402A</td>
                     <td>Sprain of Ankle L</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="M24.873" value="M24.873" /> M24.873</td>
+                    <td><input type="checkbox" name="M24873" value="M24873" /> M24.873</td>
                     <td>Ankle derangement L/R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S93.601S" value="S93.601S" /> S93.601S</td>
+                    <td><input type="checkbox" name="S93601S" value="S93601S" /> S93.601S</td>
                     <td>Sprain of Foot R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S93.602S" value="S93.602S" /> S93.602S</td>
+                    <td><input type="checkbox" name="S93602S" value="S93602S" /> S93.602S</td>
                     <td>Sprain of Foot L</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S93.501A" value="S93.501A" /> S93.501A</td>
+                    <td><input type="checkbox" name="S93501A" value="S93501A" /> S93.501A</td>
                     <td>Sprain of Toe R</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="S93.502A" value="S93.502A" /> S93.502A</td>
+                    <td><input type="checkbox" name="S93502A" value="S93502A" /> S93.502A</td>
                     <td>Sprain of Toe L</td>
                 </tr>
             </table>
