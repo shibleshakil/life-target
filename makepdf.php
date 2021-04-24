@@ -1,20 +1,18 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
+
 $mpdf = new \Mpdf\Mpdf();
+//header
+$mpdf->SetHTMLHeader('
+<div style="text-align: center; font-weight: bold;">
+    <b>
+        Life Target PT, P.C<BR>
+        37-41 77st, Jackson Heights, NY, 11372<BR>
+        Phone: 718-406-9588 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fax: 718-799-1063
+    </b>
+</div>');
 
-// echo $_POST['sex'];
-
-$data = '';
-$data .= ' <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td align="center">
-            <b style="font-size:14px;">
-                Life Target PT, P.C<BR>
-                37-41 77st, Jackson Heights, NY, 11372<BR>
-                Phone: 718-406-9588 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fax: 718-799-1063
-            </b>
-        </td>
-    </tr>
+$data = ' <table width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td align="center">&nbsp;</td>
     </tr>
@@ -23,13 +21,8 @@ $data .= ' <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <h2><u>INITIAL EXAMINATION</u></h2>
         </td>
     </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-    </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-    </tr>
 </table>';
+$data .= '<br>';
 
 if(isset($_POST['p1_1']) && $_POST['p1_1']){
     $p1_1 =$_POST['p1_1'];
@@ -3997,5 +3990,13 @@ $data .= '<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:
 // echo $data;
 // die;
 // $mpdf->SetFont('Arial','B',16);
+$mpdf->SetHTMLFooter('
+<table width="100%">
+    <tr>
+        <td width="100%" align="center">{PAGENO}/{nbpg}</td>
+    </tr>
+</table>');
+
 $mpdf->WriteHTML($data);
+// $mpdf('utf-8','A4','','','15','15','28','18'); 
 $mpdf->Output('Life_Target_Initial_Examination.pdf', 'D');
